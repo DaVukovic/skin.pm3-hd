@@ -467,16 +467,16 @@
 		<control type="group">
 			<include>Window_OpenClose_Home_Panel_Animation</include>
 			<control type="image">
-				<posx>70</posx>
-				<posy>170</posy>
+				<posx>10</posx>
+				<posy>125</posy>
 				<width>450</width>
-				<height>400</height>
+				<height>500</height>
 				<texture>Home-Menu-Back.png</texture>
 			</control>
 			<control type="button" id="10">
 				<description>Up Arrow</description>
-				<posx>155</posx>
-				<posy>140</posy>
+				<posx>66</posx>
+				<posy>144</posy>
 				<width>40</width>
 				<height>30</height>
 				<texturefocus>arrow-big-up.png</texturefocus>
@@ -487,7 +487,7 @@
 			</control>
 			<control type="button" id="11">
 				<description>Down Arrow</description>
-				<posx>155</posx>
+				<posx>66</posx>
 				<posy>540</posy>
 				<width>40</width>
 				<height>30</height>
@@ -498,8 +498,8 @@
 				<include>VisibleFadeEffect</include>
 			</control>
 			<control type="list" id="9000">
-				<posx>115</posx>
-				<posy>180</posy>
+				<posx>55</posx>
+				<posy>185</posy>
 				<width>345</width>
 				<height>342</height>
 				<onleft>20</onleft>
@@ -571,88 +571,89 @@
 					</control>
 				</focusedlayout>
 				<content>
-					<item id="8">
+                                       <item id="1">
+                                                <label>20342</label>
+                                                <onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+                                                <icon>special://skin/backgrounds/movies.jpg</icon>
+                                                <thumb>$INFO[Skin.String(Home_Custom_Back_Movies_Folder)]</thumb>
+                                                <visible>Library.HasContent(Movies)</visible>
+                                                <visible>!Skin.HasSetting(homepageHideMoviesButton)</visible>
+                                        </item>
+                                        <item id="2">
+                                                <label>20343</label>
+                                                <onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
+                                                <icon>special://skin/backgrounds/tvshow.jpg</icon>
+                                                <thumb>$INFO[Skin.String(Home_Custom_Back_TVShow_Folder)]</thumb>
+                                                <visible>Library.HasContent(TVShows)</visible>
+                                                <visible>!Skin.HasSetting(homepageHideTVShowButton)</visible>
+                                        </item>
+                                        <item id="3">
+                                                <label>2</label>
+                                                <onclick>ActivateWindow(Music)</onclick>
+                                                <icon>special://skin/backgrounds/music.jpg</icon>
+                                                <thumb>$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</thumb>
+                                                <visible>Library.HasContent(Music)</visible>
+                                                <visible>!Skin.HasSetting(homepageHideMusicButton)</visible>
+                                        </item>
+                                        <item id="3">
+                                                <label>2</label>
+                                                <onclick>ActivateWindow(MusicFiles)</onclick>
+                                                <icon>special://skin/backgrounds/music.jpg</icon>
+                                                <thumb>$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</thumb>
+                                                <visible>!Library.HasContent(Music)</visible>
+                                                <visible>!Skin.HasSetting(homepageHideMusicButton)</visible>
+                                        </item>
+                                        <item id="4">
+                                                <label>1</label>
+                                                <onclick>ActivateWindow(Pictures)</onclick>
+                                                <icon>special://skin/backgrounds/pictures.jpg</icon>
+                                                <thumb>$INFO[Skin.String(Home_Custom_Back_Pictures_Folder)]</thumb>
+                                                <visible>!Skin.HasSetting(homepageHidePictureButton)</visible>
+                                        </item>
+                                        <item id="5">
+                                                <label>3</label>
+                                                <onclick>ActivateWindow(Videos)</onclick>
+                                                <icon>special://skin/backgrounds/videos.jpg</icon>
+                                                <thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
+                                                <visible>!Skin.HasSetting(homepageVideoButtonAlwaysFilemode)</visible>
+                                                <visible>!Skin.HasSetting(homepageHideVideoButton)</visible>
+                                        </item>
+                                        <item id="5">
+                                                <label>3</label>
+                                                <onclick>ActivateWindow(Videos,root)</onclick>
+                                                <icon>special://skin/backgrounds/videos.jpg</icon>
+                                                <thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
+                                                <visible>Skin.HasSetting(homepageVideoButtonAlwaysFilemode)</visible>
+                                                <visible>!Skin.HasSetting(homepageHideVideoButton)</visible>
+                                        </item>
+                                        <item id="6">
+                                                <label>0</label>
+                                                <onclick condition="!System.Platform.Android">ActivateWindow(Programs,Addons,return)</onclick>
+                                                <onclick condition="System.Platform.Android">ActivateWindow(Programs)</onclick>
+                                                <icon>special://skin/backgrounds/programs.jpg</icon>
+                                                <thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
+                                                <visible>!Skin.HasSetting(homepageHideProgramButton)</visible>
+                                        </item>
+                                        <item id="7">
+                                                <label>8</label>
+                                                <onclick>ActivateWindow(Weather)</onclick>
+                                                <icon>special://skin/backgrounds/weather.jpg</icon>
+                                                <thumb>$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</thumb>
+                                                <visible>!Skin.HasSetting(homepageHideWeatherButton) + !IsEmpty(Weather.Plugin)</visible>
+                                        </item>
+                                        <item id="8">
+                                                <label>5</label>
+                                                <onclick>ActivateWindow(Settings)</onclick>
+                                                <icon>special://skin/backgrounds/settings.jpg</icon>
+                                                <thumb>$INFO[Skin.String(Home_Custom_Back_Settings_Folder)]</thumb>
+                                        </item>
+					<item id="9">
 						<label>31400</label>
 						<onclick>ActivateWindow(TV)</onclick>
 						<icon>special://skin/backgrounds/tv.jpg</icon>
 						<thumb>$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</thumb>
-						<visible>System.GetBool(pvrmanager.enabled)</visible>
-					</item>
-					<item id="1">
-						<label>3</label>
-						<onclick>ActivateWindow(Videos)</onclick>
-						<icon>special://skin/backgrounds/videos.jpg</icon>
-						<thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
-						<visible>!Skin.HasSetting(homepageVideoButtonAlwaysFilemode)</visible>
-						<visible>!Skin.HasSetting(homepageHideVideoButton)</visible>
-					</item>
-					<item id="1">
-						<label>3</label>
-						<onclick>ActivateWindow(Videos,Files)</onclick>
-						<icon>special://skin/backgrounds/videos.jpg</icon>
-						<thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
-						<visible>Skin.HasSetting(homepageVideoButtonAlwaysFilemode)</visible>
-						<visible>!Skin.HasSetting(homepageHideVideoButton)</visible>
-					</item>
-					<item id="9">
-						<label>20342</label>
-						<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
-						<icon>special://skin/backgrounds/movies.jpg</icon>
-						<thumb>$INFO[Skin.String(Home_Custom_Back_Movies_Folder)]</thumb>
-						<visible>Library.HasContent(Movies)</visible>
-						<visible>!Skin.HasSetting(homepageHideMoviesButton)</visible>
-					</item>
-					<item id="10">
-						<label>20343</label>
-						<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
-						<icon>special://skin/backgrounds/tvshow.jpg</icon>
-						<thumb>$INFO[Skin.String(Home_Custom_Back_TVShow_Folder)]</thumb>
-						<visible>Library.HasContent(TVShows)</visible>
-						<visible>!Skin.HasSetting(homepageHideTVShowButton)</visible>
-					</item>
-					<item id="2">
-						<label>2</label>
-						<onclick>ActivateWindow(Music)</onclick>
-						<icon>special://skin/backgrounds/music.jpg</icon>
-						<thumb>$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</thumb>
-						<visible>Library.HasContent(Music)</visible>
-						<visible>!Skin.HasSetting(homepageHideMusicButton)</visible>
-					</item>
-					<item id="2">
-						<label>2</label>
-						<onclick>ActivateWindow(MusicFiles)</onclick>
-						<icon>special://skin/backgrounds/music.jpg</icon>
-						<thumb>$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</thumb>
-						<visible>!Library.HasContent(Music)</visible>
-						<visible>!Skin.HasSetting(homepageHideMusicButton)</visible>
-					</item>
-					<item id="3">
-						<label>1</label>
-						<onclick>ActivateWindow(Pictures)</onclick>
-						<icon>special://skin/backgrounds/pictures.jpg</icon>
-						<thumb>$INFO[Skin.String(Home_Custom_Back_Pictures_Folder)]</thumb>
-						<visible>!Skin.HasSetting(homepageHidePictureButton)</visible>
-					</item>
-					<item id="4">
-						<label>0</label>
-						<onclick condition="!System.Platform.Android">ActivateWindow(Programs,Addons,return)</onclick>
-						<onclick condition="System.Platform.Android">ActivateWindow(Programs)</onclick>
-						<icon>special://skin/backgrounds/programs.jpg</icon>
-						<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
-						<visible>!Skin.HasSetting(homepageHideProgramButton)</visible>
-					</item>
-					<item id="5">
-						<label>8</label>
-						<onclick>ActivateWindow(Weather)</onclick>
-						<icon>special://skin/backgrounds/weather.jpg</icon>
-						<thumb>$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</thumb>
-						<visible>!Skin.HasSetting(homepageHideWeatherButton) + !IsEmpty(Weather.Plugin)</visible>
-					</item>
-					<item id="7">
-						<label>5</label>
-						<onclick>ActivateWindow(Settings)</onclick>
-						<icon>special://skin/backgrounds/settings.jpg</icon>
-						<thumb>$INFO[Skin.String(Home_Custom_Back_Settings_Folder)]</thumb>
+						<visible>true</visible>
+						<!-- <visible>System.GetBool(pvrmanager.enabled)</visible> -->
 					</item>
 				</content>
 			</control>
@@ -686,7 +687,6 @@
                                 <include>Window_OpenClose_Animation</include>
                         </control>
                 </control>		
-		</control>
 		<control type="label">
 			<description>date/time label</description>
 			<posx>70r</posx>
