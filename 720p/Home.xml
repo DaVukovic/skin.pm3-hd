@@ -664,13 +664,28 @@
 			<height>128</height>
 			<texture>Header.png</texture>
 		</control>
-		<control type="image">
-			<posx>40</posx>
-			<posy>30</posy>
-			<width>440</width>
-			<height>60</height>
-			<texture>xbmc-logo.png</texture>
-			<include>Window_OpenClose_Animation</include>
+                <control type="group">
+                        <description>Kodi home screen logo</description>
+                        <top>33</top>
+                        <left>70</left>
+                        <control type="image">
+                                <top>0</top>
+                                <left>0</left>
+                                <width>65</width>
+                                <height>65</height>
+                                <texture colordiffuse="kodi-blue">icons/logo.png</texture>
+                                <include>Window_OpenClose_Animation</include>
+                        </control>
+                        <control type="image">
+                                <top>10</top>
+                                <left>60</left>
+                                <aspectratio>keep</aspectratio>
+                                <width>200</width>
+                                <height>45</height>
+                                <texture>icons/logo-text.png</texture>
+                                <include>Window_OpenClose_Animation</include>
+                        </control>
+                </control>		
 		</control>
 		<control type="label">
 			<description>date/time label</description>
