@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon
-  id="skin.pm3-hd"
-  version="2.5.0"
-  name="PM3.HD"
-  provider-name="Jezz_X, Team XBMC">
+<addon id="skin.pm3-hd" version="2.5.0" name="PM3.HD" provider-name="Jezz_X, DaVu, Team XBMC">
   <requires>
-    <import addon="xbmc.gui" version="4.0.0"/>
+    <import addon="xbmc.gui" version="5.14.0"/>
   </requires>
-  <extension
-    point="xbmc.gui.skin"
-    defaultthemename="Textures.xbt"
-    debugging="false"
-    effectslowdown="1.0">
+  <extension point="xbmc.gui.skin" debugging="false" effectslowdown="1.0">
     <res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
   </extension>
   <extension point="xbmc.addon.metadata">
