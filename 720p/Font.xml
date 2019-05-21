@@ -31,7 +31,12 @@
 			<filename>humanist_521_condensed_bt.ttf</filename>
 			<size>32</size>
 		</font>
-	 	<font>
+		<font>
+			<name>font18a</name>
+			<filename>humanist_521_condensed_bt.ttf</filename>
+			<size>30</size>
+		</font>
+		<font>
 			<name>font18b</name>
 			<filename>humanist_521_bt.ttf</filename>
 			<size>32</size>

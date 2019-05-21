@@ -82,11 +82,11 @@
 		</control>
 	</include>
 	<include name="WindowTitleCommons">
-		<posx>110</posx>
-		<posy>50</posy>
+		<posx>20</posx>
+		<posy>80</posy>
 		<width>1060</width>
 		<height>30</height>
-		<font>font18</font>
+		<font>font18a</font>
 		<textcolor>white</textcolor>
 		<scroll>false</scroll>
 		<align>left</align>
