@@ -686,20 +686,8 @@
                                 <texture>icons/logo-text.png</texture>
                                 <include>Window_OpenClose_Animation</include>
                         </control>
-                </control>		
-		<control type="label">
-			<description>date/time label</description>
-			<posx>70r</posx>
-			<posy>65</posy>
-			<width>400</width>
-			<height>35</height>
-			<align>right</align>
-			<aligny>center</aligny>
-			<font>font12</font>
-			<textcolor>white</textcolor>
-			<label>$INFO[System.Date] [COLOR=grey2] |  $INFO[System.Time][/COLOR]</label>
-			<include>Window_OpenClose_Animation</include>
 		</control>
+		<include>DateTimeLabel</include>
 		<control type="image">
 			<posx>0</posx>
 			<posy>128r</posy>

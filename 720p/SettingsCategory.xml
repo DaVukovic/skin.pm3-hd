@@ -133,5 +133,6 @@
 		</control>
 		<include>WindowTitleButtons</include>
 		<include>BehindDialogFadeOut</include>
+		<include>DateTimeLabel</include>
 	</controls>
 </window>

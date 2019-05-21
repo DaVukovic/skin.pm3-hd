@@ -284,6 +284,7 @@
 		</control>
 		<include>WindowTitleButtonsMedia</include>
 		<include>BehindDialogFadeOut</include>
+		<include>DateTimeLabel</include>
 
 <!-- Test code for the flagging Can stay until all codecs done
 
