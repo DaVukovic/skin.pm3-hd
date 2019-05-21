@@ -32,8 +32,38 @@
 				<itemgap>2</itemgap>
 				<onleft>5</onleft>
 				<onright>5</onright>
-				<onup>3</onup>
-				<ondown>3</ondown>
+				<onup>20</onup>
+				<ondown>20</ondown>
+			</control>
+			<control type="group">
+				<control type="button">
+					<left>0</left>
+					<top>585</top>
+					<height>60</height>
+					<width>280</width>
+					<font>font13</font>
+					<label>31408</label>
+					<texturenofocus>Button_Side_NoFocus.png</texturenofocus>
+				</control>
+				<control type="button" id="20">
+					<description>Settings level button</description>
+					<left>0</left>
+					<top>585</top>
+					<width>280</width>
+					<height>60</height>
+					<align>right</align>
+					<aligny>top</aligny>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>18</textoffsety>
+					<textcolor>green</textcolor>
+					<font>font12</font>
+					<label>10037</label>
+					<onleft>5</onleft>
+					<onright>5</onright>
+					<ondown>3</ondown>
+					<onup>3</onup>
+					<onclick>SettingsLevelChange</onclick>
+				</control>
 			</control>
 		</control>
 		<control type="button" id="10">
