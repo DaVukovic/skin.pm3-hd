@@ -167,7 +167,15 @@ msgctxt "#31060"
 msgid "This file is stacked, select the part you want to play from."
 msgstr ""
 
-#empty strings from id 31061 to 31100
+msgctxt "#31061"
+msgid "Sort: Descending"
+msgstr ""
+
+msgctxt "#31062"
+msgid "Sort: Ascending"
+msgstr ""
+
+#empty strings from id 31063 to 31100
 #Skin Settings labels
 
 msgctxt "#31101"

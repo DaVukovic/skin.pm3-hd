@@ -11,14 +11,14 @@
 			<include>CommonListView</include> <!-- view id = 51 -->
 			<include>AddonInfoView</include>  <!-- view id = 550 -->
 			<include>ThumbnailView</include> <!-- view id = 53 -->
-			<include>AllViewCommonPageControls</include>
+			<!-- <include>AllViewCommonPageControls</include>
 			<include>CommonFileCount</include>
-			<include>ScrollOffsetLabel</include>
+			<include>ScrollOffsetLabel</include> -->
 		</control>
 		<control type="group">
 			<include>Window_OpenClose_Left_Panel_Animation</include>
 			<include>CommonNowPlaying</include>
-			<control type="group" id="9000">
+			<control type="grouplist" id="9000">
 				<posx>0</posx>
 				<posy>130</posy>
 				<control type="button" id="2">
@@ -45,12 +45,11 @@
 				</control>
 				<control type="togglebutton" id="4">
 					<description>Sort asc</description>
-					<posx>250</posx>
-					<posy>58</posy>
-					<label>-</label>
-					<onleft>3</onleft>
+					<label>31062</label>
+					<altlabel>31061</altlabel>
+					<onleft>50</onleft>
 					<onright>50</onright>
-					<onup>2</onup>
+					<onup>3</onup>
 					<ondown>5</ondown>
 				</control>
 				<control type="radiobutton" id="5">
@@ -132,5 +131,6 @@
 		</control>
 		<include>WindowTitleButtonsMedia</include>
 		<include>BehindDialogFadeOut</include>
+		<include>DateTimeLabel</include>
 	</controls>
 </window>
