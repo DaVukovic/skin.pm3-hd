@@ -6,8 +6,8 @@
 		<colorkey>0</colorkey>
 	</default>
 	<default type="label">
-		<posx>80</posx>
-		<posy>60</posy>
+		<left>80</left>
+		<top>60</top>
 		<label>-</label>
 		<font>font13</font>
 		<textcolor>white</textcolor>

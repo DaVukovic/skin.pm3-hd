@@ -7,8 +7,8 @@
 			<include>Window_OpenClose_Left_Panel_Animation</include>
 			<include>CommonNowPlaying</include>
 			<control type="grouplist" id="9000">
-				<posx>0</posx>
-				<posy>130</posy>
+				<left>0</left>
+				<top>130</top>
 				<itemgap>1</itemgap>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
@@ -50,8 +50,8 @@
 			<include>ContentPanel</include>
 			<control type="label" id="40">
 				<description>fake filter text label</description>
-				<posx>410</posx>
-				<posy>115</posy>
+				<left>410</left>
+				<top>115</top>
 				<width>790</width>
 				<height>30</height>
 				<align>center</align>
@@ -60,113 +60,113 @@
 				<font>font18</font>
 			</control>
 			<control type="image">
-				<posx>410</posx>
-				<posy>150</posy>
+				<left>410</left>
+				<top>150</top>
 				<width>790</width>
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="group">
-				<posx>300</posx>
-				<posy>170</posy>
+				<left>350</left>
+				<top>170</top>
 				<control type="label" id="2">
 					<description>Label 2</description>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>910</width>
 					<label>-</label>
 					<font>font12</font>
 				</control>
 				<control type="label" id="3">
 					<description>Label 3</description>
-					<posx>0</posx>
-					<posy>37</posy>
+					<left>0</left>
+					<top>37</top>
 					<width>910</width>
 					<label>-</label>
 					<font>font12</font>
 				</control>
 				<control type="label" id="4">
 					<description>Label 4</description>
-					<posx>0</posx>
-					<posy>70</posy>
+					<left>0</left>
+					<top>70</top>
 					<width>910</width>
 					<label>-</label>
 					<font>font12</font>
 				</control>
 				<control type="label" id="5">
 					<description>Label 5</description>
-					<posx>0</posx>
-					<posy>105</posy>
+					<left>0</left>
+					<top>105</top>
 					<width>910</width>
 					<label>-</label>
 					<font>font12</font>
 				</control>
 				<control type="label" id="6">
 					<description>Label 6</description>
-					<posx>0</posx>
-					<posy>140</posy>
+					<left>0</left>
+					<top>140</top>
 					<width>910</width>
 					<label>-</label>
 					<font>font12</font>
 				</control>
 				<control type="label" id="7">
 					<description>Label 7</description>
-					<posx>0</posx>
-					<posy>175</posy>
+					<left>0</left>
+					<top>175</top>
 					<width>910</width>
 					<label>-</label>
 					<font>font12</font>
 				</control>
 				<control type="label" id="8">
 					<description>Label 8</description>
-					<posx>0</posx>
-					<posy>210</posy>
+					<left>0</left>
+					<top>210</top>
 					<width>910</width>
 					<label>-</label>
 					<font>font12</font>
 				</control>
 				<control type="label" id="9">
 					<description>Label 9</description>
-					<posx>0</posx>
-					<posy>245</posy>
+					<left>0</left>
+					<top>245</top>
 					<width>910</width>
 					<label>-</label>
 					<font>font12</font>
 				</control>
 				<control type="label" id="10">
 					<description>Label 10</description>
-					<posx>0</posx>
-					<posy>280</posy>
+					<left>0</left>
+					<top>280</top>
 					<width>910</width>
 					<label>-</label>
 					<font>font12</font>
 				</control>
 				<control type="label" id="11">
 					<description>Label 11</description>
-					<posx>0</posx>
-					<posy>315</posy>
+					<left>0</left>
+					<top>315</top>
 					<width>910</width>
 					<label>-</label>
 					<font>font12</font>
 				</control>
 				<control type="label" id="52">
 					<description>XBMC XBE BUILD Version</description>
-					<posx>930</posx>
-					<posy>370</posy>
+					<left>930</left>
+					<top>370</top>
 					<width>910</width>
 					<label>144</label>
 					<textcolor>green</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<align>right</align>
 					<font>font12</font>
-				</control>
+				</control> 
 				<control type="group">
-					<posx>600</posx>
-					<posy>420</posy>
+					<left>600</left>
+					<top>420</top>
 					<control type="label">
 						<description>CPU Text</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>350</width>
 						<height>25</height>
 						<label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
@@ -178,16 +178,16 @@
 					</control>
 					<control type="progress">
 						<description>CPU BAR</description>
-						<posx>10</posx>
-						<posy>7</posy>
+						<left>10</left>
+						<top>7</top>
 						<width>320</width>
 						<height>12</height>
 						<info>System.CPUUsage</info>
 					</control>
 					<control type="label">
 						<description>Memory Text</description>
-						<posx>0</posx>
-						<posy>30</posy>
+						<left>0</left>
+						<top>30</top>
 						<width>350</width>
 						<height>25</height>
 						<label>$LOCALIZE[31005] $INFO[system.memory(used.percent)]</label>
@@ -199,18 +199,18 @@
 					</control>
 					<control type="progress">
 						<description>Memory BAR</description>
-						<posx>10</posx>
-						<posy>37</posy>
+						<left>10</left>
+						<top>37</top>
 						<width>320</width>
 						<height>12</height>
 						<info>system.memory(used)</info>
 					</control>
-				</control>
+				</control> 
 			</control>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>128</height>
 			<texture>Header.png</texture>

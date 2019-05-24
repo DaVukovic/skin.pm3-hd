@@ -1,9 +1,9 @@
 <includes>
 	<include name="CommonRootView">
 		<control type="list" id="50">
-			<posx>300</posx>
+			<posx>350</posx>
 			<posy>130</posy>
-			<width>950</width>
+			<width>900</width>
 			<height>510</height>
 			<onleft>9000</onleft>
 			<onright>60</onright>
@@ -71,7 +71,7 @@
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>950</width>
+					<width>900</width>
 					<height>30</height>
 					<texture border="7">list-focus.png</texture>
 					<visible>Control.HasFocus(50)</visible>
