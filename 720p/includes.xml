@@ -73,9 +73,9 @@
 			<include>VisibleFadeEffect</include>
 		</control>
 		<control type="image">
-			<posx>265</posx>
+			<posx>315</posx>
 			<posy>100</posy>
-			<width>1015</width>
+			<width>950</width>
 			<height>580</height>
 			<texture border="50,0,0,45">Panel.png</texture>
 			<animation effect="fade" start="100" end="95" time="0" condition="!IsEmpty(ListItem.Art(fanart))">conditional</animation>
@@ -126,7 +126,7 @@
 			<description>Unfocus Background</description>
 			<posx>0</posx>
 			<posy>0</posy>
-			<width>280</width>
+			<width>380</width>
 			<height>44</height>
 			<texture border="32,0,0,0">Button_Side_NoFocus.png</texture>
 			<visible>!ControlGroup(9005).HasFocus</visible>
@@ -135,7 +135,7 @@
 			<description>Focus Background</description>
 			<posx>0</posx>
 			<posy>0</posy>
-			<width>280</width>
+			<width>380</width>
 			<height>44</height>
 			<texture border="32,0,0,0">Button_Side_Focus.png</texture>
 			<visible>ControlGroup(9005).HasFocus</visible>
@@ -595,7 +595,7 @@
 	</include>
 	<include name="ButtonCommonValues">
 		<height>44</height>
-		<width>280</width>
+		<width>330</width>
 		<font>font12</font>
 		<textcolor>white</textcolor>
 		<focusedcolor>white</focusedcolor>
