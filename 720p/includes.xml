@@ -62,9 +62,9 @@
 	</include>
 	<include name="ContentPanel">
 		<control type="image">
-			<posx>285</posx>
+			<posx>340</posx>
 			<posy>100</posy>
-			<width>995</width>
+			<width>940</width>
 			<height>570</height>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<aspectratio scalediffuse="false">scale</aspectratio>
@@ -75,7 +75,7 @@
 		<control type="image">
 			<posx>315</posx>
 			<posy>100</posy>
-			<width>950</width>
+			<width>965</width>
 			<height>580</height>
 			<texture border="50,0,0,45">Panel.png</texture>
 			<animation effect="fade" start="100" end="95" time="0" condition="!IsEmpty(ListItem.Art(fanart))">conditional</animation>
@@ -502,9 +502,9 @@
 	</include>
 	<include name="AllViewCommonPageControls">
 		<control type="scrollbar" id="61"> 
-			<posx>300</posx> 
+			<posx>350</posx> 
 			<posy>630</posy> 
-			<width>970</width> 
+			<width>900</width> 
 			<height>20</height> 
 			<texturesliderbackground border="2,2,2,2">scrollbar_bar_back.png</texturesliderbackground> 
 			<texturesliderbar border="16,2,16,2">scrollbar_bar-vertical.png</texturesliderbar> 

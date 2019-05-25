@@ -86,20 +86,26 @@
 		<control type="group">
 			<include>Window_OpenClose_Left_Panel_Animation</include>
 			<include>CommonNowPlaying</include>
-			<control type="group" id="9000">
-				<posx>0</posx>
-				<posy>130</posy>
-				<animation effect="slide" start="0,0" end="-275,0" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(Animate_Skin) + [[Control.IsVisible(56) | Control.IsVisible(500)] + !ControlGroup(9000).HasFocus]">Conditional</animation>
-				<animation effect="slide" start="0,0" end="-275,0" time="0" condition="Skin.HasSetting(Animate_Skin) + [[Control.IsVisible(56) | Control.IsVisible(500)] + !ControlGroup(9000).HasFocus]">Conditional</animation>
+			<control type="group">
+				<left>0</left>
+				<top>130</top>
+                                <animation effect="slide" start="0,0" end="-320,0" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(Animate_Skin) + [[Control.IsVisible(56) | Control.IsVisible(500)] + !ControlGroup(9000).HasFocus]">Conditional</animation>
+                                <animation effect="slide" start="0,0" end="-320,0" time="0" condition="Skin.HasSetting(Animate_Skin) + [[Control.IsVisible(56) | Control.IsVisible(500)] + !ControlGroup(9000).HasFocus]">Conditional</animation>
 				<control type="image">
-					<posx>0</posx>
-					<posy>-30</posy>
-					<width>320</width>
+					<left>0</left>
+					<top>-30</top>
+					<width>360</width>
 					<height>580</height>
 					<texture border="0,0,50,45">Panel2.png</texture>
 					<visible>Control.IsVisible(56) | Control.IsVisible(500)</visible>
 					<include>VisibleFadeEffect</include>
 				</control>
+			</control>
+			<control type="grouplist" id="9000">
+				<posx>0</posx>
+				<posy>130</posy>
+				<animation effect="slide" start="0,0" end="-320,0" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(Animate_Skin) + [[Control.IsVisible(56) | Control.IsVisible(500)] + !ControlGroup(9000).HasFocus]">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-320,0" time="0" condition="Skin.HasSetting(Animate_Skin) + [[Control.IsVisible(56) | Control.IsVisible(500)] + !ControlGroup(9000).HasFocus]">Conditional</animation>
 				<control type="button" id="2">
 					<description>View As button</description>
 					<posx>0</posx>
@@ -124,10 +130,8 @@
 				</control>
 				<control type="togglebutton" id="4">
 					<description>Sort asc</description>
-					<posx>250</posx>
-					<posy>58</posy>
-					<label>-</label>
-					<onleft>3</onleft>
+					<label>31062</label>
+					<altlabel>31061</altlabel>
 					<onright>50</onright>
 					<onup>2</onup>
 					<ondown>14</ondown>
@@ -180,39 +184,6 @@
 					<ondown>16</ondown>
 					<selected>Container.Filtered</selected>
 					<visible>Container.CanFilterAdvanced</visible>
-				</control>
-				<control type="radiobutton" id="16">
-					<description>PartyMode</description>
-					<posx>0</posx>
-					<posy>225</posy>
-					<include>ButtonCommonValues</include>
-					<label>589</label>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>19</onup>
-					<ondown>17</ondown>
-				</control>
-				<control type="radiobutton" id="17">
-					<description>Flatten</description>
-					<posx>0</posx>
-					<posy>270</posy>
-					<include>ButtonCommonValues</include>
-					<label>20411</label>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>16</onup>
-					<ondown>7</ondown>
-				</control>
-				<control type="radiobutton" id="7">
-					<description>Stack button</description>
-					<posx>0</posx>
-					<posy>315</posy>
-					<label>$LOCALIZE[346]</label>
-					<include>ButtonCommonValues</include>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>17</onup>
-					<ondown>11</ondown>
 				</control>
 				<control type="radiobutton" id="11">
 					<description>Unlock Shares</description>

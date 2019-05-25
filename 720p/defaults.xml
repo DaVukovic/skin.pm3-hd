@@ -44,7 +44,7 @@
 		<textcolor>white</textcolor>
 		<textoffsetx>35</textoffsetx>
 		<textoffsety>10</textoffsety>
-		<font>font13</font>
+		<font>font12</font>
 		<disabledcolor>grey3</disabledcolor>
 		<pulseonselect>no</pulseonselect>
 	</default>

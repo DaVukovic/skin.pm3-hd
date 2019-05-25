@@ -1057,9 +1057,9 @@
 	</include>
 	<include name="VideoThumbnailView">
 		<control type="panel" id="53">
-			<posx>300</posx>
+			<posx>350</posx>
 			<posy>130</posy>
-			<width>950</width>
+			<width>900</width>
 			<height>510</height>
 			<onleft>9000</onleft>
 			<onright>60</onright>
@@ -1141,11 +1141,11 @@
 					<texture>$INFO[ListItem.Overlay]</texture>
 				</control>
 			</focusedlayout>
-			<itemlayout condition="Container.Content(TVShows) | Container.Content(Movies) | Container.Content(Seasons)" height="255" width="158">
+			<itemlayout condition="Container.Content(TVShows) | Container.Content(Movies) | Container.Content(Seasons)" height="252" width="148">
 				<control type="image">
-					<posx>1</posx>
+					<posx>5</posx>
 					<posy>1</posy>
-					<width>156</width>
+					<width>146</width>
 					<height>253</height>
 					<aspectratio>stretch</aspectratio>
 					<texture border="5">button-nofocus.png</texture>
@@ -1159,9 +1159,9 @@
 					<texture background="true">$VAR[PosterThumb]</texture>
 				</control>
 				<control type="label">
-					<posx>79</posx>
+					<posx>15</posx>
 					<posy>226</posy>
-					<width>147</width>
+					<width>130</width>
 					<height>25</height>
 					<font>font11</font>
 					<textcolor>grey2</textcolor>
@@ -1179,11 +1179,11 @@
 					<texture>$INFO[ListItem.Overlay]</texture>
 				</control>
 			</itemlayout>
-			<focusedlayout  condition="Container.Content(TVShows) | Container.Content(Movies) | Container.Content(Seasons)" height="255" width="158">
+			<focusedlayout  condition="Container.Content(TVShows) | Container.Content(Movies) | Container.Content(Seasons)" height="252" width="148">
 				<control type="image">
-					<posx>1</posx>
+					<posx>5</posx>
 					<posy>1</posy>
-					<width>156</width>
+					<width>146</width>
 					<height>253</height>
 					<aspectratio>stretch</aspectratio>
 					<texture border="5">folder-focus.png</texture>
@@ -1197,9 +1197,9 @@
 					<texture background="true">$VAR[PosterThumb]</texture>
 				</control>
 				<control type="label">
-					<posx>79</posx>
+					<posx>15</posx>
 					<posy>226</posy>
-					<width>147</width>
+					<width>130</width>
 					<height>25</height>
 					<font>font11</font>
 					<textcolor>white</textcolor>
