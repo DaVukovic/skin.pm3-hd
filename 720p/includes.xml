@@ -36,6 +36,15 @@
 		<value condition="IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Icon]</value>
 	</variable>
 
+	<include name="KeyboardButtonCommons">
+		<width>48</width>
+		<height>48</height>
+		<texturenofocus border="3,14,27,3">button-nofocus.png</texturenofocus>
+		<texturefocus border="3,14,27,3">button-focus-keyboard.png</texturefocus>
+	</include>
+
+		
+
 	<include name="DateTimeLabel">
 		<control type="label">
 			<description>date/time label</description>
