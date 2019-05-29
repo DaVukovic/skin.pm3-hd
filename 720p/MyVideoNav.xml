@@ -171,7 +171,7 @@
 					<selected>Container.Filtered</selected>
 					<visible>!Container.CanFilterAdvanced</visible>
 				</control>
-				<control type="radiobutton" id="20">
+				<control type="radiobutton" id="200">
 					<description>Advanced Filter</description>
 					<posx>0</posx>
 					<posy>180</posy>
