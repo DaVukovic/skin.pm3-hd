@@ -149,28 +149,72 @@
 					<label>-</label>
 					<font>font12</font>
 				</control>
-				<control type="label" id="52">
-					<description>XBMC XBE BUILD Version</description>
-					<left>930</left>
-					<top>370</top>
-					<width>910</width>
-					<label>144</label>
-					<textcolor>green</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>right</align>
-					<font>font12</font>
-				</control> 
 				<control type="group">
-					<left>600</left>
-					<top>420</top>
+					<description>Version and date info group</description>
+					<left>-347</left>
+					<top>200</top>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>340</width>
+						<height>310</height>
+						<texture border="0,0,50,45">Panel2.png</texture>
+						<include>VisibleFadeEffect</include>
+					</control>
+					<control type="group">
+						<control type="label">
+							<description>Build text</description>
+							<left>10</left>
+							<top>20</top>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>left</align>
+							<font>font12</font>
+							<label>$LOCALIZE[144]</label>
+						</control>
+						<control type="label" id="52">
+							<description>Kodi build version</description>
+							<left>10</left>
+							<top>40</top>
+							<textcolor>green</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>left</align>
+							<font>font12</font>
+						</control> 
+					</control>
+					<control type="group">
+						<control type="label">
+							<description>date text</description>
+							<left>10</left>
+							<top>80</top>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>left</align>
+							<font>font12</font>
+							<label>$LOCALIZE[174]</label>
+						</control>
+						<control type="label" id="53">
+							<description>Kodi build date</description>
+							<left>10</left>
+							<top>100</top>
+							<textcolor>green</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>left</align>
+							<font>font12</font>
+						</control>
+					</control>
+				</control>
+				<control type="group">
+					<left>0</left>
+					<top>400</top>
 					<control type="label">
 						<description>CPU Text</description>
 						<left>0</left>
 						<top>0</top>
-						<width>350</width>
+						<width>550</width>
 						<height>25</height>
 						<label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
-						<align>right</align>
+						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -178,20 +222,20 @@
 					</control>
 					<control type="progress">
 						<description>CPU BAR</description>
-						<left>10</left>
-						<top>7</top>
-						<width>320</width>
+						<left>0</left>
+						<top>25</top>
+						<width>550</width>
 						<height>12</height>
 						<info>System.CPUUsage</info>
 					</control>
 					<control type="label">
 						<description>Memory Text</description>
 						<left>0</left>
-						<top>30</top>
-						<width>350</width>
+						<top>40</top>
+						<width>550</width>
 						<height>25</height>
 						<label>$LOCALIZE[31005] $INFO[system.memory(used.percent)]</label>
-						<align>right</align>
+						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -199,9 +243,9 @@
 					</control>
 					<control type="progress">
 						<description>Memory BAR</description>
-						<left>10</left>
-						<top>37</top>
-						<width>320</width>
+						<left>0</left>
+						<top>65</top>
+						<width>550</width>
 						<height>12</height>
 						<info>system.memory(used)</info>
 					</control>
