@@ -43,6 +43,61 @@
 					<label>19191</label>
 					<visible>System.GetBool(pvrmanager.enabled)</visible>
 				</control>
+                                <control type="group">
+                                        <description>Version and date info group</description>
+                                        <left>-347</left>
+                                        <top>200</top>
+                                        <control type="image">
+                                                <left>0</left>
+                                                <top>1</top>
+                                                <width>349</width>
+                                                <height>310</height>
+                                                <texture border="0,0,50,45">Panel2.png</texture>
+                                                <include>VisibleFadeEffect</include>
+                                        </control>
+                                        <control type="group">
+                                                <control type="label">
+                                                        <description>Build text</description>
+                                                        <left>10</left>
+                                                        <top>20</top>
+                                                        <textcolor>white</textcolor>
+                                                        <shadowcolor>black</shadowcolor>
+                                                        <align>left</align>
+                                                        <font>font10</font>
+                                                        <label>$LOCALIZE[144]</label>
+                                                </control>
+                                                <control type="label" id="52">
+                                                        <description>Kodi build version</description>
+                                                        <left>10</left>
+                                                        <top>35</top>
+                                                        <textcolor>green</textcolor>
+                                                        <shadowcolor>black</shadowcolor>
+                                                        <align>left</align>
+                                                        <font>font10</font>
+                                                </control>
+                                        </control>
+                                        <control type="group">
+                                                <control type="label">
+                                                        <description>date text</description>
+                                                        <left>10</left>
+                                                        <top>60</top>
+                                                        <textcolor>white</textcolor>
+                                                        <shadowcolor>black</shadowcolor>
+                                                        <align>left</align>
+                                                        <font>font10</font>
+                                                        <label>$LOCALIZE[174]</label>
+                                                </control>
+                                                <control type="label" id="53">
+                                                        <description>Kodi build date</description>
+                                                        <left>10</left>
+                                                        <top>75</top>
+                                                        <textcolor>green</textcolor>
+                                                        <shadowcolor>black</shadowcolor>
+                                                        <align>left</align>
+                                                        <font>font10</font>
+                                                </control>
+                                        </control>
+                                </control>
 			</control>
 		</control>
 		<control type="group">
@@ -148,61 +203,6 @@
 					<width>910</width>
 					<label>-</label>
 					<font>font12</font>
-				</control>
-				<control type="group">
-					<description>Version and date info group</description>
-					<left>-347</left>
-					<top>200</top>
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>340</width>
-						<height>310</height>
-						<texture border="0,0,50,45">Panel2.png</texture>
-						<include>VisibleFadeEffect</include>
-					</control>
-					<control type="group">
-						<control type="label">
-							<description>Build text</description>
-							<left>10</left>
-							<top>20</top>
-							<textcolor>white</textcolor>
-							<shadowcolor>black</shadowcolor>
-							<align>left</align>
-							<font>font12</font>
-							<label>$LOCALIZE[144]</label>
-						</control>
-						<control type="label" id="52">
-							<description>Kodi build version</description>
-							<left>10</left>
-							<top>40</top>
-							<textcolor>green</textcolor>
-							<shadowcolor>black</shadowcolor>
-							<align>left</align>
-							<font>font12</font>
-						</control> 
-					</control>
-					<control type="group">
-						<control type="label">
-							<description>date text</description>
-							<left>10</left>
-							<top>80</top>
-							<textcolor>white</textcolor>
-							<shadowcolor>black</shadowcolor>
-							<align>left</align>
-							<font>font12</font>
-							<label>$LOCALIZE[174]</label>
-						</control>
-						<control type="label" id="53">
-							<description>Kodi build date</description>
-							<left>10</left>
-							<top>100</top>
-							<textcolor>green</textcolor>
-							<shadowcolor>black</shadowcolor>
-							<align>left</align>
-							<font>font12</font>
-						</control>
-					</control>
 				</control>
 				<control type="group">
 					<left>0</left>
