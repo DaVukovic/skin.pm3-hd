@@ -1222,9 +1222,9 @@
 	<include name="WideIconView">
 		<control type="panel" id="54">
 			<visible>Container.Content(TVShows) | Window.IsVisible(Programs)</visible>
-			<posx>300</posx>
+			<posx>350</posx>
 			<posy>130</posy>
-			<width>950</width>
+			<width>900</width>
 			<height>510</height>
 			<onleft>9000</onleft>
 			<onright>60</onright>
@@ -1234,30 +1234,30 @@
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<preloaditems>2</preloaditems>
-			<itemlayout height="127" width="475" condition="!Skin.HasSetting(Media_Titles_WideIcons)">
+			<itemlayout height="127" width="425" condition="!Skin.HasSetting(Media_Titles_WideIcons)">
 				<control type="image">
 					<posx>1</posx>
 					<posy>1</posy>
-					<width>473</width>
+					<width>423</width>
 					<height>125</height>
 					<texture border="5">button-nofocus.png</texture>
 				</control>
 				<control type="image">
 					<posx>6</posx>
 					<posy>6</posy>
-					<width>463</width>
+					<width>413</width>
 					<height>90</height>
 					<texture background="true">$VAR[BannerThumb]</texture>
 				</control>
 				<control type="label">
-					<posx>237</posx>
+					<posx>10</posx>
 					<posy>100</posy>
-					<width>473</width>
+					<width>413</width>
 					<height>25</height>
 					<font>font11</font>
 					<textcolor>white</textcolor>
 					<selectedcolor>green</selectedcolor>
-					<align>center</align>
+					<align>left</align>
 					<aligny>center</aligny>
 					<info>ListItem.Label</info>
 				</control>
@@ -1270,18 +1270,18 @@
 					<texture>$INFO[ListItem.Overlay]</texture>
 				</control>
 			</itemlayout>
-			<focusedlayout height="127" width="475" condition="!Skin.HasSetting(Media_Titles_WideIcons)">
+			<focusedlayout height="127" width="425" condition="!Skin.HasSetting(Media_Titles_WideIcons)">
 				<control type="image">
 					<posx>1</posx>
 					<posy>1</posy>
-					<width>473</width>
+					<width>423</width>
 					<height>125</height>
 					<texture border="5">folder-focus.png</texture>
 				</control>
 				<control type="image">
 					<posx>6</posx>
 					<posy>6</posy>
-					<width>463</width>
+					<width>413</width>
 					<height>90</height>
 					<texture background="true">$VAR[BannerThumb]</texture>
 				</control>
@@ -1294,14 +1294,14 @@
 					<texture>$INFO[ListItem.Overlay]</texture>
 				</control>
 				<control type="label">
-					<posx>237</posx>
+					<posx>10</posx>
 					<posy>100</posy>
 					<width>538</width>
 					<height>25</height>
 					<font>font11</font>
 					<textcolor>white</textcolor>
 					<selectedcolor>green</selectedcolor>
-					<align>center</align>
+					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
