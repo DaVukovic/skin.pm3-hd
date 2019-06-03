@@ -18,7 +18,7 @@
 					<posy>4</posy>
 					<width>40</width>
 					<height>22</height>
-					<texture background="true">$VAR[PosterThumb]</texture>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
 				</control>
 				<control type="label">
 					<posx>50</posx>
@@ -82,7 +82,7 @@
 					<posy>4</posy>
 					<width>40</width>
 					<height>22</height>
-					<texture background="true">$VAR[PosterThumb]</texture>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
 				</control>
 				<control type="label">
 					<posx>50</posx>
@@ -136,7 +136,7 @@
 	<include name="CommonListView">
 		<control type="list" id="51">
 			<visible>!Container.Content(Episodes)</visible>
-			<posx>300</posx>
+			<posx>350</posx>
 			<posy>130</posy>
 			<width>540</width>
 			<height>510</height>
@@ -151,7 +151,7 @@
 				<control type="label">
 					<posx>10</posx>
 					<posy>0</posy>
-					<width>520</width>
+					<width>470</width>
 					<height>30</height>
 					<font>font12</font>
 					<textcolor>white</textcolor>
@@ -187,11 +187,11 @@
 					<visible>Container.Content(Seasons)</visible>
 				</control>
 			</itemlayout>
-			<focusedlayout height="30" width="540">
+			<focusedlayout height="30" width="490">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>540</width>
+					<width>490</width>
 					<height>30</height>
 					<texture border="7">list-focus.png</texture>
 					<visible>Control.HasFocus(51)</visible>
@@ -200,7 +200,7 @@
 				<control type="label">
 					<posx>10</posx>
 					<posy>0</posy>
-					<width>520</width>
+					<width>470</width>
 					<height>30</height>
 					<font>font12</font>
 					<textcolor>white</textcolor>

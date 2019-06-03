@@ -292,8 +292,8 @@
 				<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
 			</control>
 			<control type="label">
-				<posx>300</posx>
-				<posy>580</posy>
+				<posx>350</posx>
+				<posy>570</posy>
 				<width>970</width>
 				<height>35</height>
 				<font>font11</font>
@@ -322,9 +322,9 @@
 	<include name="MovieFanartView">
 		<control type="list" id="56">
 			<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)</visible>
-			<posx>300</posx>
+			<posx>340</posx>
 			<posy>130</posy>
-			<width>390</width>
+			<width>370</width>
 			<height>510</height>
 			<onleft>9000</onleft>
 			<onright>60</onright>
@@ -354,11 +354,11 @@
 					<texture>$INFO[ListItem.Overlay,List]</texture>
 				</control>
 			</itemlayout>
-			<focusedlayout height="30" width="390">
+			<focusedlayout height="30" width="370">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>390</width>
+					<width>370</width>
 					<height>30</height>
 					<texture border="7">list-focus.png</texture>
 					<visible>Control.HasFocus(56)</visible>
@@ -612,9 +612,9 @@
 	<include name="MoviesListView">
 		<control type="list" id="58">
 			<visible>Container.Content(movies) | Container.Content(Episodes)</visible>
-			<posx>600</posx>
+			<posx>620</posx>
 			<posy>130</posy>
-			<width>650</width>
+			<width>630</width>
 			<height>360</height>
 			<onleft>9000</onleft>
 			<onright>60</onright>
@@ -623,7 +623,7 @@
 			<viewtype label="544">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
-			<itemlayout height="30" width="675">
+			<itemlayout height="30" width="655">
 				<control type="label">
 					<posx>10</posx>
 					<posy>0</posy>
@@ -656,11 +656,11 @@
 					<texture>$INFO[ListItem.Overlay,List]</texture>
 				</control>
 			</itemlayout>
-			<focusedlayout height="30" width="675">
+			<focusedlayout height="30" width="655">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>675</width>
+					<width>630</width>
 					<height>30</height>
 					<texture border="7">list-focus.png</texture>
 					<visible>Control.HasFocus(58)</visible>
