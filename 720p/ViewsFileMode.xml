@@ -251,6 +251,16 @@
 				<texture background="true">$VAR[PosterThumb]</texture>
 			</control>
 			<control type="image">
+				<visible>Container.Content(Artists) | Container.Content(Albums)</visible>
+				<left>0</left>
+				<top>0</top>
+				<width>400</width>
+				<height>510</height>
+				<aspectratio>keep</aspectratio>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
+			</control>
+			<control type="image">
 				<posx>340</posx>
 				<posy>450</posy>
 				<width>50</width>
