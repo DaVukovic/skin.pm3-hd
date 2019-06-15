@@ -1,37 +1,191 @@
 <window>
-	<defaultcontrol always="true">2</defaultcontrol>
+	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<include>CommonBackground</include>
 		<control type="group">
+			<left>9</left>
+			<top>130</top>
+			<width>350</width>
+			<height>500</height>
+			<include>Window_OpenClose_Left_Panel_Animation</include>
+			<control type="list" id="9000">
+				<left>0</left>
+				<top>0</top>
+				<onleft>9010</onleft>
+				<onright>9010</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<pagecontrol/>
+				<itemlayout height="46" width="330">
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>330</width>
+						<height>44</height>
+						<texture border="32,0,0,0">Button_Side_NoFocus.png</texture>
+						<pulseonselect>true</pulseonselect>
+					</control>
+					<control type="label">
+						<left>35</left>
+						<top>10</top>
+						<width>250</width>
+						<font>12</font>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout height="46" width="330">
+					<control type="image">				
+						<left>0</left>
+						<top>0</top>
+						<widht>330</widht>
+						<height>44</height>
+						<texture border="32,0,0,0">Button_Side_Focus.png</texture>
+						<animation effect="fade" start="100" end="30" time="0" condition="!Control.HasFocus(9000)">Conditional</animation>
+						<pulseonselect>true</pulseonselect>
+					</control>
+					<control type="label">
+						<left>35</left>
+						<top>10</top>
+						<width>250</width>
+						<height>44</height>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<label>31409</label>
+						<icon></icon>
+					</item>
+					<item id="2">
+						<label>13200</label>
+						<icon></icon>
+					</item>
+				</content>
+			</control>
+		</control>
+		<control type="group" id="9010">
 			<include>Window_OpenClose_Right_Panel_Animation</include>
 			<include>ContentPanel</include>
-			<control type="panel" id="2">
-				<posx>300</posx>
-				<posy>130</posy>
-				<width>910</width>
-				<height>340</height>
+			<control type="grouplist" id="9001">
+				<visible>Container(9000).HasFocus(1)</visible>
+				<left>350</left>
+				<top>130</top>
+				<onup>9001</onup>
+				<ondown>9001</ondown>
 				<onleft>9000</onleft>
-				<onright>60</onright>
-				<onup>53</onup>
-				<ondown>53</ondown>
-				<viewtype label="21371">list</viewtype>
-				<pagecontrol>60</pagecontrol>
-				<scrolltime>200</scrolltime>
-				<itemlayout height="170" width="190">
+				<onright>9000</onright>
+				<control type="radiobutton" id="4">
+					<description>Show login screen</description>
+					<width>900</width>
+					<height>35</height>
+					<label>20096</label>
+					<font>font12</font>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturenofocus></texturenofocus>
+				</control>
+				<control type="button" id="5">
+					<width>900</width>
+					<height>35</height>
+					<label>33084</label>
+					<label2>$INFO[System.ProfileAutoLogin]</label2>
+					<font>font12</font>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturenofocus></texturenofocus>
+				</control>
+			</control>
+			<control type="group">
+				<description>Descroption area</description>
+				<left>350</left>
+				<top>510</top>
+				<width>590</width>
+				<height>300</height>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<height>2</height>
+					<width>920</width>
+					<texture>separator.png</texture>
+				</control>
+				<control type="group">
+					<visible>Container(9000).HasFocus(2)</visible>
+					<left>10</left>
+					<top>10</top>
 					<control type="image">
-						<posx>1</posx>
-						<posy>0</posy>
-						<width>188</width>
+						<left>0</left>
+						<top>0</top>
+						<width>128</width>
+						<height>128</height>
+						<aspectratio>keep</aspectratio>
+						<bordertexture border="5">button-nofocus.png</bordertexture>
+						<texture fallback="unknown-user.png">$INFO[Container(2).Listitem.Icon]</texture>
+					</control>
+					<control type="label">
+						<left>120</left>
+						<top>30</top>
+						<width>200</width>
+						<height>44</height>
+						<font>font12</font>
+						<align>right</align>
+						<textcolor>green</textcolor>
+						<label>$LOCALIZE[20093]: </label>
+					</control>
+					<control type="label">
+						<left>320</left>
+						<top>30</top>
+						<width>300</width>
+						<height>44</height>
+						<font>font12</font>
+						<textcolor>white</textcolor>
+						<label>$INFO[Container(2).ListItem.Label]</label>
+					</control>
+					<control type="label">
+						<left>120</left>
+						<top>70</top>
+						<width>200</width>
+						<height>44</height>
+						<font>font12</font>
+						<align>right</align>
+						<textcolor>green</textcolor>
+						<label>$LOCALIZE[31047]: </label>
+					</control>
+					<control type="label">
+						<left>320</left>
+						<top>70</top>
+						<width>300</width>
+						<height>44</height>
+						<font>font12</font>
+						<textcolor>white</textcolor>
+						<label fallback="13170">$INFO[Container(2).ListItem.Label2]</label>
+					</control>
+				</control>
+			</control>
+			<control type="panel" id="2">
+				<visible>Container(9000).HasFocus(2)</visible>
+				<left>350</left>
+				<top>130</top>
+				<width>900</width>
+				<height>450</height>
+				<onleft>9000</onleft>
+				<itemlayout height="170" width="170">
+					<control type="image">
+						<left>1</left>
+						<top>0</top>
+						<width>168</width>
 						<height>145</height>
 						<bordertexture border="5">button-nofocus.png</bordertexture>
 						<bordersize>5</bordersize>
-						<texture fallback="unknown-user.png">$INFO[Listitem.Icon]</texture>
+						<texture fallback="unknown-user.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
-						<posx>94</posx>
-						<posy>145</posy>
-						<width>178</width>
+						<left>0</left>
+						<top>145</top>
+						<width>150</width>
 						<height>25</height>
 						<font>font11</font>
 						<textcolor>grey2</textcolor>
@@ -41,130 +195,30 @@
 						<info>ListItem.Label</info>
 					</control>
 				</itemlayout>
-				<focusedlayout height="170" width="190">
+				<focusedlayout height="170" width="170">
 					<control type="image">
-						<posx>1</posx>
-						<posy>0</posy>
-						<width>188</width>
+						<left>1</left>
+						<top>0</top>
+						<width>168</width>
 						<height>145</height>
 						<bordertexture border="5">folder-focus.png</bordertexture>
 						<bordersize>5</bordersize>
-						<texture fallback="unknown-user.png">$INFO[Listitem.Icon]</texture>
+						<texture fallback="unknown-user.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
-						<posx>94</posx>
-						<posy>145</posy>
-						<width>178</width>
+						<left>0</left>
+						<top>145</top>
+						<width>168</width>
 						<height>25</height>
 						<font>font11</font>
-						<textcolor>white</textcolor>
+						<textcolor>grey2</textcolor>
 						<selectedcolor>green</selectedcolor>
 						<align>center</align>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
 					</control>
 				</focusedlayout>
-			</control>
-			<control type="scrollbar" id="60">
-				<posx>1255</posx>
-				<posy>130</posy>
-				<width>20</width>
-				<height>340</height>
-				<texturesliderbackground border="2,2,2,2">scrollbar_bar_back.png</texturesliderbackground>
-				<texturesliderbar border="2,16,2,16">scrollbar_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="2,16,2,16">scrollbar_bar_focus.png</texturesliderbarfocus>
-				<textureslidernib>scrollbar_nib.png</textureslidernib>
-				<textureslidernibfocus>scrollbar_nib.png</textureslidernibfocus>
-				<onleft>2</onleft>
-				<onright>9000</onright>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
-			</control>
-			<control type="label">
-				<description>Page Count Label</description>
-				<posx>50r</posx>
-				<posy>38r</posy>
-				<width>500</width>
-				<height>20</height>
-				<font>font12b</font>
-				<textcolor>white</textcolor>
-				<scroll>false</scroll>
-				<align>right</align>
-				<aligny>center</aligny>
-				<label>($INFO[Container(2).NumItems]) $LOCALIZE[31025] - $LOCALIZE[31024] ($INFO[Container(2).CurrentPage]/$INFO[Container(2).NumPages])</label>
-			</control>
-			<control type="image">
-				<posx>300</posx>
-				<posy>510</posy>
-				<width>950</width>
-				<height>2</height>
-				<texture>separator.png</texture>
-			</control>
-			<control type="image">
-				<posx>330</posx>
-				<posy>525</posy>
-				<width>128</width>
-				<height>128</height>
-				<aspectratio>keep</aspectratio>
-				<texture fallback="unknown-user.png">$INFO[Container(2).Listitem.Icon]</texture>
-			</control>
-			<control type="label">
-				<posx>480</posx>
-				<posy>545</posy>
-				<width>770</width>
-				<height>30</height>
-				<font>font18</font>
-				<textcolor>white</textcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[Container(2).ListItem.Label,[COLOR=green]$LOCALIZE[20093] : [/COLOR]]</label>
-			</control>
-			<control type="label">
-				<posx>480</posx>
-				<posy>590</posy>
-				<width>770</width>
-				<height>30</height>
-				<font>font18</font>
-				<textcolor>white</textcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[Container(2).ListItem.Label2,[COLOR=green]$LOCALIZE[31047] : [/COLOR]]</label>
-			</control>
-		</control>
-		<control type="group" id="9000">
-			<include>Window_OpenClose_Left_Panel_Animation</include>
-			<include>CommonNowPlaying</include>
-			<control type="group" id="9000">
-				<posx>0</posx>
-				<posy>130</posy>
-				<control type="radiobutton" id="4">
-					<description>Enable Login screen</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<include>ButtonCommonValues</include>
-					<label>20096</label>
-					<onleft>2</onleft>
-					<onright>2</onright>
-					<onup>611</onup>
-					<ondown>610</ondown>
-				</control>
-				<control type="button" id="610">
-					<description>Fake Button to fix Player Controls Navigation</description>
-					<onup>4</onup>
-					<ondown>603</ondown>
-					<visible>false</visible>
-				</control>
-				<control type="group">
-					<posx>0</posx>
-					<posy>45</posy>
-					<include>CommonNowPlaying_Controls</include>
-				</control>
-				<control type="button" id="611">
-					<description>Fake Button to fix Player Controls Navigation</description>
-					<onup>603</onup>
-					<ondown>4</ondown>
-					<visible>false</visible>
-				</control>
 			</control>
 		</control>
 		<control type="image">
@@ -180,5 +234,6 @@
 		</control>
 		<include>WindowTitleButtons</include>
 		<include>BehindDialogFadeOut</include>
+		<include>DateTimeLabel</include>
 	</controls>
 </window>
