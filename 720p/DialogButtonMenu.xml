@@ -1,7 +1,6 @@
 <window>
 	<defaultcontrol always="true">35</defaultcontrol>
 	<coordinates>
-		<system>1</system>
 		<posx>0</posx>
 		<posy>320</posy>
 	</coordinates>
@@ -15,7 +14,7 @@
 			<height>116</height>
 			<texture border="1,11,1,23">sub-background.png</texture>
 		</control>
-		<control type="grouplist">
+		<control type="grouplist" id="1000">
 			<posx>0</posx>
 			<posy>5</posy>
 			<width>1280</width>
@@ -35,7 +34,7 @@
 				<alttexturenofocus>sub-nomaster-nofocus.png</alttexturenofocus>
 				<onclick>xbmc.mastermode</onclick>
 				<pulseonselect>no</pulseonselect>
-				<font>-</font>
+				<font></font>
 				<visible>System.HasLocks</visible>
 				<visible>System.Loggedon</visible>
 			</control>
@@ -47,7 +46,7 @@
 				<texturenofocus>sub-info-nofocus.png</texturenofocus>
 				<onclick>XBMC.ActivateWindow(7)</onclick>
 				<pulseonselect>no</pulseonselect>
-				<font>-</font>
+				<font></font>
 				<label>130</label>
 				<visible>System.Loggedon</visible>
 			</control>
@@ -60,13 +59,13 @@
 				<onclick>dialog.close(all,true)</onclick>
 				<onclick>system.logoff</onclick>
 				<pulseonselect>no</pulseonselect>
-				<font>-</font>
+				<font></font>
 				<label>$LOCALIZE[20126] $INFO[system.profilename]</label>
 				<visible>System.HasLoginScreen</visible>
 				<visible>System.Loggedon</visible>
 			</control>
 			<control type="button" id="13">
-				<description>Exit xbmc</description>
+				<description>Exit Kodi</description>
 				<width>80</width>
 				<height>81</height>
 				<texturefocus>sub-exit-focus.gif</texturefocus>
@@ -74,12 +73,14 @@
 				<onclick>dialog.close(all,true)</onclick>
 				<onclick>XBMC.Quit()</onclick>
 				<pulseonselect>no</pulseonselect>
-				<font>-</font>
-				<label>$LOCALIZE[13012] XBMC</label>
+				<font></font>
+				<label>$LOCALIZE[13012]</label>
 				<visible>System.ShowExitButton</visible>
 			</control>
-			<control type="group" id="14">
+			<control type="grouplist" id="14">
 				<width>80</width>
+				<height>81</height>
+				<orientation>Vertical</orientation>
 				<defaultcontrol always="true">35</defaultcontrol>
 				<control type="button" id="30">
 					<description>30min ShutdownTimer button</description>
@@ -87,15 +88,15 @@
 					<posy>0</posy>
 					<width>80</width>
 					<height>81</height>
-					<texturefocus>-</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<texturefocus>sub-shutdown-focus.gif</texturefocus>
+					<texturenofocus></texturenofocus>
 					<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown(),30)</onclick>
 					<pulseonselect>no</pulseonselect>
 					<onleft>13</onleft>
 					<onright>15</onright>
 					<onup>31</onup>
 					<ondown>35</ondown>
-					<font>-</font>
+					<font></font>
 					<label>20147</label>
 				</control>
 				<control type="button" id="31">
@@ -104,15 +105,15 @@
 					<posy>0</posy>
 					<width>80</width>
 					<height>81</height>
-					<texturefocus>-</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<texturefocus>sub-shutdown-focus.gif</texturefocus>
+					<texturenofocus></texturenofocus>
 					<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown(),60)</onclick>
 					<pulseonselect>no</pulseonselect>
 					<onleft>13</onleft>
 					<onright>15</onright>
 					<onup>32</onup>
 					<ondown>30</ondown>
-					<font>-</font>
+					<font></font>
 					<label>20148</label>
 				</control>
 				<control type="button" id="32">
@@ -121,15 +122,15 @@
 					<posy>0</posy>
 					<width>80</width>
 					<height>81</height>
-					<texturefocus>-</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<texturefocus>sub-shutdown-focus.gif</texturefocus>
+					<texturenofocus></texturenofocus>
 					<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown(),120)</onclick>
 					<pulseonselect>no</pulseonselect>
 					<onleft>13</onleft>
 					<onright>15</onright>
 					<onup>33</onup>
 					<ondown>31</ondown>
-					<font>-</font>
+					<font></font>
 					<label>20149</label>
 				</control>
 				<control type="button" id="33">
@@ -138,15 +139,15 @@
 					<posy>0</posy>
 					<width>80</width>
 					<height>81</height>
-					<texturefocus>-</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<texturefocus>sub-shutdown-focus.gif</texturefocus>
+					<texturenofocus></texturenofocus>
 					<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown())</onclick>
 					<pulseonselect>no</pulseonselect>
 					<onleft>13</onleft>
 					<onright>15</onright>
 					<onup>34</onup>
 					<ondown>32</ondown>
-					<font>-</font>
+					<font></font>
 					<label>20150</label>
 				</control>
 				<control type="button" id="34">
@@ -156,15 +157,15 @@
 					<posy>0</posy>
 					<width>80</width>
 					<height>81</height>
-					<texturefocus>-</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<texturefocus>sub-shutdown-focus.gif</texturefocus>
+					<texturenofocus></texturenofocus>
 					<onclick>XBMC.CancelAlarm(shutdowntimer)</onclick>
 					<pulseonselect>no</pulseonselect>
 					<onleft>13</onleft>
 					<onright>15</onright>
 					<onup>35</onup>
 					<ondown>33</ondown>
-					<font>-</font>
+					<font></font>
 					<label>20151</label>
 				</control>
 				<control type="button" id="35">
@@ -173,7 +174,7 @@
 					<posy>0</posy>
 					<width>80</width>
 					<height>81</height>
-					<texturefocus>-</texturefocus>
+					<texturefocus>sub-shutdown-focus.gif</texturefocus>
 					<texturenofocus>sub-shutdown-nofocus.png</texturenofocus>
 					<onclick>XBMC.Shutdown()</onclick>
 					<pulseonselect>no</pulseonselect>
@@ -181,7 +182,7 @@
 					<onright>15</onright>
 					<onup>30</onup>
 					<ondown>34</ondown>
-					<font>-</font>
+					<font></font>
 					<label>13005</label>
 				</control>
 				<control type="image">
@@ -205,7 +206,7 @@
 				<onclick>XBMC.Suspend()</onclick>
 				<onclick>dialog.close(all,true)</onclick>
 				<pulseonselect>no</pulseonselect>
-				<font>-</font>
+				<font></font>
 				<label>13011</label>
 				<visible>!Skin.HasSetting(ShutdownUseHibernate)</visible>
 				<visible>System.CanSuspend</visible>
@@ -221,7 +222,7 @@
 				<onclick>XBMC.Hibernate()</onclick>
 				<onclick>dialog.close(all,true)</onclick>
 				<pulseonselect>no</pulseonselect>
-				<font>-</font>
+				<font></font>
 				<label>13010</label>
 				<visible>Skin.HasSetting(ShutdownUseHibernate)</visible>
 				<visible>System.CanHibernate</visible>
@@ -236,7 +237,7 @@
 				<texturenofocus>sub-favs-nofocus.png</texturenofocus>
 				<onclick>XBMC.ActivateWindow(Favourites)</onclick>
 				<pulseonselect>no</pulseonselect>
-				<font>-</font>
+				<font></font>
 				<label>1036</label>
 				<visible>System.Loggedon</visible>
 			</control>
@@ -250,7 +251,7 @@
 				<texturenofocus>sub-reboot-nofocus.png</texturenofocus>
 				<onclick>XBMC.Reset()</onclick>
 				<pulseonselect>no</pulseonselect>
-				<font>-</font>
+				<font></font>
 				<label>13013</label>
 			</control>
 			<control type="button" id="19">
@@ -263,7 +264,7 @@
 				<texturefocus>sub-eject-focus.gif</texturefocus>
 				<onclick>XBMC.EjectTray()</onclick>
 				<pulseonselect>no</pulseonselect>
-				<font>-</font>
+				<font></font>
 				<label>$LOCALIZE[13391] $LOCALIZE[155]</label>
 				<visible>System.Loggedon + System.HasMediaDVD</visible>
 			</control>
@@ -292,7 +293,7 @@
 		</control>
 		<control type="image" id="0">
 			<posx>0</posx>
-			<posy>110</posy>
+			<posy>150</posy>
 			<width>1280</width>
 			<height>50</height>
 			<colordiffuse>CCFFFFFF</colordiffuse>
@@ -301,13 +302,33 @@
 		<control type="label" id="3100">
 			<description>Label control</description>
 			<posx>0</posx>
-			<posy>110</posy>
+			<posy>150</posy>
 			<width>1280</width>
 			<height>40</height>
-			<label>-</label>
+			<label></label>
 			<align>center</align>
 			<aligny>center</aligny>
 			<font>font12</font>
+		</control>
+		<control type="group">
+			<left>578</left>
+			<top>-30</top>
+			<control type="image">
+				<description>Up arrow</description>
+				<left>0</left>
+				<top>0</top>
+				<width>40</width>
+				<height>30</height>
+				<texture>arrow-big-up.png</texture>
+			</control>
+			<control type="image">
+				<description>Down Arrow</description>
+				<left>0</left>
+				<top>125</top>
+				<width>40</width>
+				<height>30</height>
+				<texture>arrow-big-down.png</texture>
+			</control>
 		</control>
 	</controls>
 </window>
