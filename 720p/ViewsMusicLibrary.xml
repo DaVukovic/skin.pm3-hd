@@ -2,7 +2,7 @@
 	<include name="AlbumSongsFanartView">
 		<control type="list" id="55">
 			<visible>Container.Content(Albums)</visible>
-			<posx>300</posx>
+			<posx>350</posx>
 			<posy>130</posy>
 			<width>400</width>
 			<height>510</height>
@@ -112,9 +112,9 @@
 	<include name="ArtistFanartView">
 		<control type="list" id="56">
 			<visible>Container.Content(Artists)</visible>
-			<posx>300</posx>
+			<posx>350</posx>
 			<posy>130</posy>
-			<width>400</width>
+			<width>350</width>
 			<height>510</height>
 			<onleft>9000</onleft>
 			<onright>60</onright>
@@ -141,7 +141,7 @@
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>390</width>
+					<width>340</width>
 					<height>30</height>
 					<texture border="7">list-focus.png</texture>
 					<visible>Control.HasFocus(56)</visible>

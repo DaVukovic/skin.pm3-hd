@@ -273,7 +273,7 @@
 	<include name="SongInfoListView">
 		<control type="list" id="59">
 			<visible>Window.IsVisible(MusicFiles) | Window.IsVisible(MusicPlaylist) | Container.Content(Songs) | Container.Content(Albums) | Container.Content(Artists)</visible>
-			<posx>575</posx>
+			<posx>625</posx>
 			<posy>130</posy>
 			<width>675</width>
 			<height>360</height>
@@ -338,7 +338,7 @@
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>675</width>
+					<width>625</width>
 					<height>30</height>
 					<texture border="7">list-focus.png</texture>
 					<visible>Control.HasFocus(59)</visible>
@@ -395,7 +395,7 @@
 			</focusedlayout>
 		</control>
 		<control type="group">
-			<posx>300</posx>
+			<posx>350</posx>
 			<posy>150</posy>
 			<visible>Control.IsVisible(59)</visible>
 			<control type="image">
@@ -851,7 +851,7 @@
 			<control type="label">
 				<description>Formed txt</description>
 				<posx>150</posx>
-				<posy>75</posy>
+				<posy>100</posy>
 				<width>140</width>
 				<height>25</height>
 				<label>$LOCALIZE[21894]:</label>
@@ -864,7 +864,7 @@
 			<control type="label">
 				<description>Formed Value</description>
 				<posx>165</posx>
-				<posy>75</posy>
+				<posy>100</posy>
 				<width>770</width>
 				<height>25</height>
 				<label fallback="416">$INFO[listitem.Property(Artist_Formed)]</label>
@@ -977,9 +977,9 @@
 	<include name="ThumbnailView">
 		<control type="panel" id="53">
 			<visible>!Container.Content(TVShows) + !Container.Content(Movies) + !Container.Content(Songs)</visible>
-			<posx>300</posx>
+			<posx>350</posx>
 			<posy>130</posy>
-			<width>950</width>
+			<width>900</width>
 			<height>510</height>
 			<onleft>9000</onleft>
 			<onright>60</onright>
@@ -989,7 +989,7 @@
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<preloaditems>2</preloaditems>
-			<itemlayout height="170" width="190">
+			<itemlayout height="180" width="200">
 				<control type="image">
 					<posx>1</posx>
 					<posy>1</posy>
@@ -1006,7 +1006,7 @@
 					<texture background="true">$INFO[Listitem.Icon]</texture>
 				</control>
 				<control type="label">
-					<posx>94</posx>
+					<posx>0</posx>
 					<posy>141</posy>
 					<width>178</width>
 					<height>25</height>
@@ -1026,7 +1026,7 @@
 					<texture>$INFO[ListItem.Overlay]</texture>
 				</control>
 			</itemlayout>
-			<focusedlayout height="170" width="190">
+			<focusedlayout height="180" width="200">
 				<control type="image">
 					<posx>1</posx>
 					<posy>1</posy>
@@ -1043,7 +1043,7 @@
 					<texture background="true">$INFO[Listitem.Icon]</texture>
 				</control>
 				<control type="label">
-					<posx>94</posx>
+					<posx>0</posx>
 					<posy>141</posy>
 					<width>178</width>
 					<height>25</height>
