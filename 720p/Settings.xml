@@ -3,6 +3,20 @@
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<include>CommonBackground</include>
+		<control type="image">
+			<left>40</left>left>
+			<top>135</top>top>
+			<width>1223</width>
+			<height>500</height>height>
+			<texture border="40">DialogBack.png</texture>
+		</control>
+		<control type="image">
+			<left>40</left>
+			<top>135</top>
+			<width>1223</width>
+			<height>500</height>
+			<texture border="40">DialogFront.png</texture>
+		</control>
 		<control type="group">
 			<control type="panel" id="50">
 				<posx>80</posx>

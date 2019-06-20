@@ -506,7 +506,7 @@
 				<onright>22</onright>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
-				<pagecontrol>-</pagecontrol>
+				<pagecontrol></pagecontrol>
 				<scrolltime>200</scrolltime>
 				<itemlayout height="57" width="345">
 					<control type="image">
@@ -636,7 +636,8 @@
                                         </item>
                                         <item id="7">
                                                 <label>8</label>
-                                                <onclick>ActivateWindow(Weather)</onclick>
+                                                <onclick condition="!String.IsEmpty(Weather.Plugin)">ActivateWindow(Weather)</onclick>
+                                                <onclick condition="String.IsEmpty(Weather.Plugin)">ActivateWindow(servicesettings,weather)</onclick>
                                                 <icon>special://skin/backgrounds/weather.jpg</icon>
                                                 <thumb>$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</thumb>
                                                 <visible>!Skin.HasSetting(homepageHideWeatherButton) + !IsEmpty(Weather.Plugin)</visible>
@@ -705,9 +706,9 @@
 				<posy>0</posy>
 				<width>50</width>
 				<height>50</height>
-				<label>-</label>
-				<font>-</font>
-				<aligny>-</aligny>
+				<label></label>
+				<font></font>
+				<aligny></aligny>
 				<onclick>XBMC.PlayDVD()</onclick>
 				<texturefocus>home-playmedia.png</texturefocus>
 				<texturenofocus>home-playmedia.png</texturenofocus>
@@ -732,9 +733,9 @@
 				<posy>0</posy>
 				<width>50</width>
 				<height>50</height>
-				<label>-</label>
-				<font>-</font>
-				<aligny>-</aligny>
+				<label></label>
+				<font></font>
+				<aligny></aligny>
 				<onclick>ActivateWindow(Favourites)</onclick>
 				<texturefocus>home-favourites.png</texturefocus>
 				<texturenofocus>home-favourites.png</texturenofocus>
@@ -757,9 +758,9 @@
 				<posy>0</posy>
 				<width>50</width>
 				<height>50</height>
-				<label>-</label>
-				<font>-</font>
-				<aligny>-</aligny>
+				<label></label>
+				<font></font>
+				<aligny></aligny>
 				<onclick>ActivateWindow(ShutdownMenu)</onclick>
 				<texturefocus>home-power.png</texturefocus>
 				<texturenofocus>home-power.png</texturenofocus>

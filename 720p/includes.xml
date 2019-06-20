@@ -105,8 +105,8 @@
 	<include name="WindowCloseButtonCommons">
 		<width>30</width>
 		<height>30</height>
-		<label>-</label>
-		<font>-</font>
+		<label></label>
+		<font></font>
 		<onclick>PreviousMenu</onclick>
 		<texturefocus>close-windowFO.png</texturefocus>
 		<texturenofocus>close-window.png</texturenofocus>

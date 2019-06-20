@@ -7,7 +7,7 @@
 			<include>Window_OpenClose_Right_Panel_Animation</include>
 			<include>ContentPanel</include>
 			<control type="group">
-				<posx>317</posx>
+				<posx>350</posx>
 				<posy>135</posy>
 				<control type="image">
 					<posx>0</posx>
@@ -64,7 +64,7 @@
 				<control type="label">
 					<description>current temp Value</description>
 					<posx>20</posx>
-					<posy>60</posy>
+					<posy>110</posy>
 					<width>210</width>
 					<height>180</height>
 					<font>font35b</font>
@@ -77,7 +77,7 @@
 				<control type="image">
 					<description>current weather icon</description>
 					<posx>230</posx>
-					<posy>60</posy>
+					<posy>110</posy>
 					<width>210</width>
 					<height>180</height>
 					<info>Window.Property(Current.ConditionIcon)</info>
@@ -226,7 +226,7 @@
 			</control>
 			<control type="group">
 				<description>day 0</description>
-				<posx>780</posx>
+				<posx>810</posx>
 				<posy>135</posy>
 				<control type="image">
 					<posx>0</posx>
@@ -325,7 +325,7 @@
 			</control>
 			<control type="group">
 				<description>day 0</description>
-				<posx>780</posx>
+				<posx>810</posx>
 				<posy>263</posy>
 				<control type="image">
 					<posx>0</posx>
@@ -424,7 +424,7 @@
 			</control>
 			<control type="group">
 				<description>day 0</description>
-				<posx>780</posx>
+				<posx>810</posx>
 				<posy>391</posy>
 				<control type="image">
 					<posx>0</posx>
@@ -523,7 +523,7 @@
 			</control>
 			<control type="group">
 				<description>day 3</description>
-				<posx>780</posx>
+				<posx>810</posx>
 				<posy>519</posy>
 				<control type="image">
 					<posx>0</posx>
@@ -631,7 +631,7 @@
 					<description>change location button</description>
 					<posx>0</posx>
 					<posy>0</posy>
-					<font>-</font>
+					<font></font>
 					<textoffsetx>15</textoffsetx>
 					<include>ButtonCommonValues</include>
 					<onleft>99</onleft>
@@ -681,7 +681,7 @@
 					<posx>0</posx>
 					<posy>135</posy>
 					<label>5</label>
-					<onclick>ActivateWindow(MyWeatherSettings)</onclick>
+					<onclick>ActivateWindow(servicesettings,weather)</onclick>
 					<include>ButtonCommonValues</include>
 					<onleft>50</onleft>
 					<onright>50</onright>
@@ -722,14 +722,14 @@
 		</control>
 		<control type="label" id="1">
 			<description>weather location label</description>
-			<posx>50r</posx>
-			<posy>50</posy>
-			<width>1060</width>
+			<posx>350</posx>
+			<posy>210</posy>
+			<width>460</width>
 			<height>30</height>
 			<font>font18</font>
 			<textcolor>white</textcolor>
 			<scroll>false</scroll>
-			<align>right</align>
+			<align>center</align>
 			<aligny>center</aligny>
 			<label>$INFO[Window(Weather).Property(Location)]</label>
 			<include>Window_OpenClose_Animation</include>
