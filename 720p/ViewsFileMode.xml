@@ -90,8 +90,8 @@
 					<width>890</width>
 					<height>30</height>
 					<font>font12</font>
-					<textcolor>white</textcolor>
-					<selectedcolor>green</selectedcolor>
+					<!-- textcolor>white</textcolor -->
+					<textcolor>green</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
@@ -203,11 +203,10 @@
 					<width>470</width>
 					<height>30</height>
 					<font>font12</font>
-					<textcolor>white</textcolor>
-					<selectedcolor>green</selectedcolor>
+					<textcolor>green</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<info>ListItem.Label</info>
+					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
 					<posx>530</posx>

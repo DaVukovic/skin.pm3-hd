@@ -11,9 +11,9 @@
 			<include>CommonListView</include> <!-- view id = 51 -->
 			<include>AddonInfoView</include>  <!-- view id = 550 -->
 			<include>ThumbnailView</include> <!-- view id = 53 -->
-			<!-- <include>AllViewCommonPageControls</include>
+			<include>AllViewCommonPageControls</include>
 			<include>CommonFileCount</include>
-			<include>ScrollOffsetLabel</include> -->
+			<include>ScrollOffsetLabel</include>
 		</control>
 		<control type="group">
 			<include>Window_OpenClose_Left_Panel_Animation</include>
