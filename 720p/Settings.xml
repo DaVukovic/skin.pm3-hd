@@ -85,12 +85,12 @@
 					<item>
 						<label>7</label>
 						<onclick>ActivateWindow(FileManager)</onclick>
-						<icon>FileManager.png</icon>
+						<icon>icons/settings/icon_FileManager.png</icon>
 					</item>
 					<item>
 						<label>24001</label>
 						<onclick>ActivateWindow(AddonBrowser)</onclick>
-						<icon>icon_addons.png</icon>
+						<icon>icons/settings/icon_Addons.png</icon>
 					</item>
 					<item>
 						<label>138</label>
@@ -100,37 +100,37 @@
 					<item>
 						<label>10050</label>
 						<onclick>ActivateWindow(Eventlog)</onclick>
-						<icon>unknown-user.png</icon>
+						<icon>icons/settings/icon_EventLog.png</icon>
 					</item>
 					<item>
-                                                <label>14036</label>
-                                                <onclick>ActivateWindow(servicesettings)</onclick>
-                                                <icon>unknown-user.png</icon>
+						<label>14036</label>
+						<onclick>ActivateWindow(servicesettings)</onclick>
+						<icon>unknown-user.png</icon>
 					</item> 
 					<item>
 						<label>13000</label>
 						<onclick>ActivateWindow(SystemSettings)</onclick>
-						<icon>icon_system.png</icon>
+						<icon>icons/settings/icon_System.png</icon>
 					</item>
 					<item>
 						<label>14206</label>
 						<onclick>ActivateWindow(AppearanceSettings)</onclick>
-						<icon>icon_appearence.png</icon>
+						<icon>icons/settings/icon_Appearence.png</icon>
 					</item>
 					<item>
 						<label>14200</label>
 						<onclick>ActivateWindow(PlayerSettings)</onclick>
-						<icon>unknown-user.png</icon>
+						<icon>icons/settings/icon_Player.png</icon>
 					</item>
 					<item>
 						<label>14211</label>
 						<onclick>ActivateWindow(MediaSettings)</onclick>
-						<icon>unknown-user.png</icon>
+						<icon>icons/settings/icon_Media.png</icon>
 					</item>
 					<item>
 						<label>14204</label>
 						<onclick>ActivateWindow(PVRSettings)</onclick>
-						<icon>unknown-user.png</icon>
+						<icon>icons/settings/icon_PVR.png</icon>
 					</item>
 					<item>
 						<label>15016</label>
