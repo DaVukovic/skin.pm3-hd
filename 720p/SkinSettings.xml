@@ -33,7 +33,7 @@
 					<label>$LOCALIZE[20079]</label>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 					<onclick>Skin.ToggleSetting(Animate_Skin)</onclick>
@@ -51,7 +51,7 @@
 					<label>31104</label>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 					<onclick>Skin.ToggleSetting(ShutdownUseHibernate)</onclick>
@@ -64,7 +64,7 @@
 					<label>20189</label>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 					<onclick>Skin.ToggleSetting(AutoScroll)</onclick>
@@ -77,7 +77,7 @@
 					<label>31103</label>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 					<onclick>Skin.ToggleSetting(Show_SlideShow_Paused)</onclick>
@@ -90,7 +90,7 @@
 					<label>31105</label>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 					<onclick>Skin.ToggleSetting(No_Media_Titles_In_Scanner)</onclick>
@@ -108,7 +108,7 @@
 					<label>31112</label>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 					<onclick>Skin.ToggleSetting(Media_Titles_WideIcons)</onclick>
@@ -121,7 +121,7 @@
 					<label>31116</label>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 					<onclick>Skin.ToggleSetting(Hide_Video_Flags)</onclick>
@@ -134,7 +134,7 @@
 					<label>31118</label>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 					<onclick>Skin.ToggleSetting(Show_Panel_Fanart)</onclick>
@@ -152,7 +152,7 @@
 					<label>21398</label>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 					<onclick>Skin.ToggleSetting(Use_Startup_Playlist)</onclick>
@@ -168,7 +168,7 @@
 					<label>15311</label>
 					<label2>$INFO[Skin.String(Startup_Playlist_Path)]</label2>
 					<onclick>Skin.SetFile(Startup_Playlist_Path,.m3u,t:\playlists\music\)</onclick>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<enable>Skin.HasSetting(Use_Startup_Playlist)</enable>
 				</control>
@@ -184,7 +184,7 @@
 					<label>31115</label>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 					<onclick>Skin.ToggleSetting(Player_Show_Teletext_Button)</onclick>
@@ -223,7 +223,7 @@
 					<selected>!Skin.HasSetting(homepageVideoinfo)</selected>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 				</control>
@@ -237,7 +237,7 @@
 					<selected>!Skin.HasSetting(homepagePVRinfo)</selected>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 				</control>
@@ -251,7 +251,7 @@
 					<selected>!Skin.HasSetting(homepageMusicinfo)</selected>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 				</control>
@@ -265,7 +265,7 @@
 					<selected>!Skin.HasSetting(homepageWeatherinfo)</selected>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 				</control>
@@ -279,7 +279,7 @@
 					<selected>Skin.HasSetting(homepageVideoButtonAlwaysFilemode)</selected>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 					<enable>!Skin.HasSetting(homepageHideVideoButton)</enable>
@@ -302,7 +302,7 @@
 					<selected>Skin.HasSetting(homepageHideVideoButton)</selected>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 				</control>
@@ -316,7 +316,7 @@
 					<selected>Skin.HasSetting(homepageHideMoviesButton)</selected>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 					<enable>Library.HasContent(Movies)</enable>
@@ -331,7 +331,7 @@
 					<selected>Skin.HasSetting(homepageHideTVShowButton)</selected>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 					<enable>Library.HasContent(TVShows)</enable>
@@ -346,7 +346,7 @@
 					<selected>Skin.HasSetting(homepageHideMusicButton)</selected>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 				</control>
@@ -360,7 +360,7 @@
 					<selected>Skin.HasSetting(homepageHidePictureButton)</selected>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 				</control>
@@ -374,7 +374,7 @@
 					<selected>Skin.HasSetting(homepageHideProgramButton)</selected>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 				</control>
@@ -388,7 +388,7 @@
 					<selected>Skin.HasSetting(homepageHideWeatherButton)</selected>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 				</control>
@@ -713,7 +713,7 @@
 					<label>$LOCALIZE[31208]</label>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 					<onclick>Skin.ToggleSetting(LyricScript_Enable)</onclick>
@@ -727,7 +727,7 @@
 					<label2>[COLOR=green]$INFO[Skin.String(LyricScript_Path)][/COLOR]</label2>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 					<onclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
@@ -745,7 +745,7 @@
 					<label>$LOCALIZE[31209] [B]$LOCALIZE[8][/B]</label>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 					<onclick>Skin.ToggleSetting(WeatherScript_Enable)</onclick>
@@ -759,7 +759,7 @@
 					<label2>[COLOR=green]$INFO[Skin.String(WeatherScript_Label)][/COLOR]</label2>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 					<onclick>Skin.SetString(WeatherScript_Label)</onclick>
@@ -773,7 +773,7 @@
 					<label2>[COLOR=green]$INFO[Skin.String(WeatherScript_Path)][/COLOR]</label2>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 					<onclick>Skin.SetAddon(WeatherScript_Path,xbmc.python.script)</onclick>
@@ -791,7 +791,7 @@
 					<label>$LOCALIZE[31207]</label>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 					<onclick>Skin.ToggleSetting(SubtitleScript_Enable)</onclick>
@@ -805,7 +805,7 @@
 					<label2>[COLOR=green]$INFO[Skin.String(SubtitleScript_Path)][/COLOR]</label2>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
 					<onclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</onclick>

@@ -40,7 +40,7 @@
 					<posy>0</posy>
 					<width>340</width>
 					<height>30</height>
-					<texture border="7">list-focus.png</texture>
+					<texture colordiffuse="green" border="7">list-focus.png</texture>
 					<visible>Control.HasFocus(59)</visible>
 					<include>VisibleFadeEffect</include>
 				</control>
@@ -360,7 +360,7 @@
 					<posy>0</posy>
 					<width>370</width>
 					<height>30</height>
-					<texture border="7">list-focus.png</texture>
+					<texture colordiffuse="green" border="7">list-focus.png</texture>
 					<visible>Control.HasFocus(56)</visible>
 					<include>VisibleFadeEffect</include>
 				</control>
@@ -370,7 +370,7 @@
 					<width>350</width>
 					<height>30</height>
 					<font>font12</font>
-					<textcolor>green</textcolor>
+					<textcolor>white</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
@@ -661,7 +661,7 @@
 					<posy>0</posy>
 					<width>630</width>
 					<height>30</height>
-					<texture border="7">list-focus.png</texture>
+					<texture colordiffuse="green" border="7">list-focus.png</texture>
 					<visible>Control.HasFocus(58)</visible>
 					<include>VisibleFadeEffect</include>
 				</control>
@@ -671,7 +671,7 @@
 					<width>660</width>
 					<height>30</height>
 					<font>font12</font>
-					<textcolor>green</textcolor>
+					<textcolor>white</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
