@@ -13,7 +13,7 @@
 				<width>900</width>
 				<height>510</height>
 				<itemgap>2</itemgap>
-				<pagecontrol>-</pagecontrol>
+				<pagecontrol></pagecontrol>
 				<onleft>3</onleft>
 				<onright>90</onright>
 				<onup>5</onup>
@@ -79,7 +79,7 @@
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
-			<texturenofocus>-</texturenofocus>
+			<texturenofocus></texturenofocus>
 		</control>
 		<control type="radiobutton" id="8">
 			<description>Default RadioButton</description>
@@ -91,7 +91,7 @@
 			<focusedcolor>white</focusedcolor>
 			<textureradioon>radiobutton-focus-2.png</textureradioon>
 			<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
-			<texturenofocus>-</texturenofocus>
+			<texturenofocus></texturenofocus>
 		</control>
 		<control type="spincontrolex" id="9">
 			<description>Default SpinControlex</description>
@@ -102,7 +102,7 @@
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<texturefocus colordiffuse="green" border="7">list-focus.png</texturefocus>
-			<texturenofocus>-</texturenofocus>
+			<texturenofocus></texturenofocus>
 			<aligny>center</aligny>
 			<reverse>yes</reverse>
 		</control>
@@ -124,7 +124,7 @@
 			<top>0</top>
 			<width>0</width>
 			<height>0</height>
-			<font>-</font>
+			<font></font>
 			<visible>false</visible>
 		</control>
 		<control type="label">

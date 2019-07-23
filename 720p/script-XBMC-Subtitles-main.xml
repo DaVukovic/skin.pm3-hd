@@ -303,8 +303,8 @@
 				<posy>-45</posy>
 				<width>1280</width>
 				<height>720</height>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
+				<texturenofocus></texturenofocus>
+				<texturefocus></texturefocus>
 				<onclick>Skin.Reset(SubtitleSourceChooserVisible)</onclick>
 			</control>
 			<control type="group">

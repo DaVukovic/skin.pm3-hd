@@ -166,7 +166,7 @@
 				<posy>2</posy>
 				<width>32</width>
 				<height>28</height>
-				<label>-</label>
+				<label></label>
 				<texturefocus>PlayerControls-PrevFO.png</texturefocus>
 				<texturenofocus>PlayerControls-PrevNF.png</texturenofocus>
 				<onleft>50</onleft>
@@ -180,7 +180,7 @@
 				<posy>2</posy>
 				<width>32</width>
 				<height>28</height>
-				<label>-</label>
+				<label></label>
 				<texturefocus>PlayerControls-StopFO.png</texturefocus>
 				<texturenofocus>PlayerControls-StopNF.png</texturenofocus>
 				<onleft>600</onleft>
@@ -195,7 +195,7 @@
 				<posy>2</posy>
 				<width>32</width>
 				<height>28</height>
-				<label>-</label>
+				<label></label>
 				<texturefocus>PlayerControls-PauseFO.png</texturefocus>
 				<texturenofocus>PlayerControls-PauseNF.png</texturenofocus>
 				<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
@@ -212,7 +212,7 @@
 				<posy>2</posy>
 				<width>32</width>
 				<height>28</height>
-				<label>-</label>
+				<label></label>
 				<texturefocus>PlayerControls-NextFO.png</texturefocus>
 				<texturenofocus>PlayerControls-NextNF.png</texturenofocus>
 				<onleft>603</onleft>
@@ -226,9 +226,9 @@
 				<posy>2</posy>
 				<width>32</width>
 				<height>28</height>
-				<label>-</label>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<label></label>
+				<texturefocus></texturefocus>
+				<texturenofocus></texturenofocus>
 				<onclick>XBMC.PlayerControl(Repeat)</onclick>
 				<onleft>602</onleft>
 				<onright>605</onright>
@@ -294,7 +294,7 @@
 				<posy>2</posy>
 				<width>32</width>
 				<height>28</height>
-				<label>-</label>
+				<label></label>
 				<texturefocus>PlayerControls-RandomFO_2.png</texturefocus>
 				<texturenofocus>PlayerControls-RandomNF_2.png</texturenofocus>
 				<usealttexture>Playlist.IsRandom</usealttexture>
@@ -311,7 +311,7 @@
 				<posy>2</posy>
 				<width>32</width>
 				<height>28</height>
-				<label>-</label>
+				<label></label>
 				<texturefocus>PlayerControls-FullScreenFO.png</texturefocus>
 				<texturenofocus>PlayerControls-FullScreenNF.png</texturenofocus>
 				<onleft>605</onleft>

@@ -55,7 +55,7 @@
 			<width>620</width>
 			<height>340</height>
 			<itemgap>5</itemgap>
-			<pagecontrol>-</pagecontrol>
+			<pagecontrol></pagecontrol>
 			<onleft>28</onleft>
 			<onright>28</onright>
 			<onup>28</onup>

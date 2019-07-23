@@ -84,7 +84,7 @@
 			<onleft>5</onleft>
 			<onright>5</onright>
 			<ondown>5</ondown>
-			<pagecontrol>-</pagecontrol>
+			<pagecontrol></pagecontrol>
 			<scrolltime>200</scrolltime>
 			<itemlayout height="40">
 				<control type="image">

@@ -142,7 +142,7 @@
 			<onright>2</onright>
 			<ondown>2</ondown>
 			<onup>2</onup>
-			<textcolor>-</textcolor>
+			<textcolor></textcolor>
 			<showonepage>false</showonepage>
 		</control>
 	</controls>

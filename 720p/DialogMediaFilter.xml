@@ -32,7 +32,7 @@
 			<align>center</align>
 			<aligny>center</aligny>
 			<font>font18</font>
-			<label>-</label>
+			<label></label>
 			<textcolor>dialogheader</textcolor>
 		</control>
 		<control type="button">
@@ -56,7 +56,7 @@
 			<width>720</width>
 			<height>440</height>
 			<itemgap>4</itemgap>
-			<pagecontrol>-</pagecontrol>
+			<pagecontrol></pagecontrol>
 			<onup>9001</onup>
 			<ondown>9001</ondown>
 			<onleft>9001</onleft>

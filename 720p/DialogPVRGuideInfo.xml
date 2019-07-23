@@ -252,7 +252,7 @@
 				<aligny>center</aligny>
 				<texturenofocus border="3">button-nofocus.png</texturenofocus>
 				<texturefocus border="3">button-focus2.png</texturefocus>
-				<label>-</label>
+				<label></label>
 				<onleft>5</onleft>
 				<onright>7</onright>
 				<onup>61</onup>

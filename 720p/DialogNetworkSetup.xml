@@ -79,7 +79,7 @@
 			<texturefocus border="5">button-focus.png</texturefocus>\n
 			<texturenofocus border="5">button-nofocus.png</texturenofocus>
 			<font>font12</font>
-			<label>-</label>
+			<label></label>
 			<onup>10</onup>
 			<onleft>12</onleft>
 			<onright>12</onright>
@@ -114,7 +114,7 @@
 			<texturefocus border="5">button-focus.png</texturefocus>\n
 			<texturenofocus border="5">button-nofocus.png</texturenofocus>
 			<font>font12</font>
-			<label>-</label>
+			<label></label>
 			<onup>11</onup>
 			<onleft>16</onleft>
 			<onright>16</onright>
