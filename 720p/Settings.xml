@@ -105,7 +105,7 @@
 					<item>
 						<label>14036</label>
 						<onclick>ActivateWindow(servicesettings)</onclick>
-						<icon>unknown-user.png</icon>
+						<icon>icons/settings/icon_Services.png</icon>
 					</item> 
 					<item>
 						<label>13000</label>
@@ -135,7 +135,7 @@
 					<item>
 						<label>15016</label>
 						<onclick>ActivateWindow(GameSettings)</onclick>
-						<icon>unknown-user.png</icon>
+						<icon>icons/settings/icon_Games.png</icon>
 					</item>
 					<item>
 						<label>13200</label>
