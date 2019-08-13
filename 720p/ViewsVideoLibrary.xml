@@ -87,77 +87,80 @@
 				<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">$VAR[BannerThumb]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 			</control>
-			<control type="label">
-				<description>Episodes txt</description>
-				<posx>115</posx>
-				<posy>145</posy>
-				<width>115</width>
-				<height>25</height>
-				<label>$LOCALIZE[20360]:</label>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>font11</font>
-				<textcolor>white</textcolor>
-			</control>
-			<control type="label">
-				<description>Episodes Value</description>
-				<posx>130</posx>
-				<posy>145</posy>
-				<width>420</width>
-				<height>25</height>
-				<label fallback="416">$INFO[listitem.episode] [COLOR=grey] ($INFO[ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101]])[/COLOR]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font11</font>
-				<scroll>true</scroll>
-			</control>
-			<control type="label">
-				<description>First Aired txt</description>
-				<posx>115</posx>
-				<posy>170</posy>
-				<width>165</width>
-				<height>25</height>
-				<label>$LOCALIZE[20416]:</label>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>font11</font>
-				<textcolor>white</textcolor>
-			</control>
-			<control type="label">
-				<description>First Aired Value</description>
-				<posx>130</posx>
-				<posy>170</posy>
-				<width>420</width>
-				<height>25</height>
-				<label fallback="416">$INFO[listitem.premiered]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font11</font>
-				<scroll>true</scroll>
-			</control>
-			<control type="label">
-				<description>Genre txt</description>
-				<posx>115</posx>
-				<posy>195</posy>
-				<width>115</width>
-				<height>25</height>
-				<label>$LOCALIZE[515]:</label>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>font11</font>
-				<textcolor>white</textcolor>
-			</control>
-			<control type="label">
-				<description>Genre Value</description>
-				<posx>130</posx>
-				<posy>195</posy>
-				<width>420</width>
-				<height>25</height>
-				<label fallback="416">$INFO[listitem.Genre]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font11</font>
-				<scroll>true</scroll>
+			<control type="group">
+				<visible>!ListItem.IsParentFolder</visible>
+				<control type="label">
+					<description>Episodes txt</description>
+					<posx>115</posx>
+					<posy>145</posy>
+					<width>115</width>
+					<height>25</height>
+					<label>$LOCALIZE[20360]:</label>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font11</font>
+					<textcolor>white</textcolor>
+				</control>
+				<control type="label">
+					<description>Episodes Value</description>
+					<posx>130</posx>
+					<posy>145</posy>
+					<width>420</width>
+					<height>25</height>
+					<label fallback="416">$INFO[listitem.episode] [COLOR=grey] ($INFO[ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101]])[/COLOR]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font11</font>
+					<scroll>true</scroll>
+				</control>
+				<control type="label">
+					<description>First Aired txt</description>
+					<posx>115</posx>
+					<posy>170</posy>
+					<width>165</width>
+					<height>25</height>
+					<label>$LOCALIZE[20416]:</label>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font11</font>
+					<textcolor>white</textcolor>
+				</control>
+				<control type="label">
+					<description>First Aired Value</description>
+					<posx>130</posx>
+					<posy>170</posy>
+					<width>420</width>
+					<height>25</height>
+					<label fallback="416">$INFO[listitem.premiered]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font11</font>
+					<scroll>true</scroll>
+				</control>
+				<control type="label">
+					<description>Genre txt</description>
+					<posx>115</posx>
+					<posy>195</posy>
+					<width>115</width>
+					<height>25</height>
+					<label>$LOCALIZE[515]:</label>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font11</font>
+					<textcolor>white</textcolor>
+				</control>
+				<control type="label">
+					<description>Genre Value</description>
+					<posx>130</posx>
+					<posy>195</posy>
+					<width>420</width>
+					<height>25</height>
+					<label fallback="416">$INFO[listitem.Genre]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font11</font>
+					<scroll>true</scroll>
+				</control>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -224,7 +227,7 @@
 						<posy>310</posy>
 						<width>214</width>
 						<height>310</height>
-						<aspectratio>stretch</aspectratio>
+						<aspectratio>keep</aspectratio>
 						<bordertexture border="5" flipy="true" diffuse="diffuse_mirror2.png">button-nofocus.png</bordertexture>
 						<bordersize>5</bordersize>
 						<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">$VAR[PosterThumb]</texture>
@@ -256,7 +259,7 @@
 						<posy>310</posy>
 						<width>214</width>
 						<height>310</height>
-						<aspectratio>stretch</aspectratio>
+						<aspectratio>keep</aspectratio>
 						<bordertexture border="5" flipy="true" diffuse="diffuse_mirror2.png">folder-focus.png</bordertexture>
 						<bordersize>5</bordersize>
 						<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">$VAR[PosterThumb]</texture>

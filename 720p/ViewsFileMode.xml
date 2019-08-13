@@ -1246,24 +1246,25 @@
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<preloaditems>2</preloaditems>
-			<itemlayout height="127" width="425" condition="!Skin.HasSetting(Media_Titles_WideIcons)">
+			<itemlayout height="115" width="430" condition="!Skin.HasSetting(Media_Titles_WideIcons)">
 				<control type="image">
 					<posx>1</posx>
 					<posy>1</posy>
 					<width>423</width>
-					<height>125</height>
+					<height>110</height>
 					<texture border="5">button-nofocus.png</texture>
 				</control>
 				<control type="image">
 					<posx>6</posx>
-					<posy>6</posy>
+					<posy>0</posy>
 					<width>413</width>
 					<height>90</height>
+					<aspectratio>keep</aspectratio>
 					<texture background="true">$VAR[BannerThumb]</texture>
 				</control>
 				<control type="label">
 					<posx>10</posx>
-					<posy>100</posy>
+					<posy>85</posy>
 					<width>413</width>
 					<height>25</height>
 					<font>font11</font>
@@ -1274,40 +1275,41 @@
 					<info>ListItem.Label</info>
 				</control>
 				<control type="image">
-					<posx>438</posx>
-					<posy>65</posy>
-					<width>35</width>
-					<height>35</height>
+					<posx>390</posx>
+					<posy>5</posy>
+					<width>25</width>
+					<height>25</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Overlay]</texture>
 				</control>
 			</itemlayout>
-			<focusedlayout height="127" width="425" condition="!Skin.HasSetting(Media_Titles_WideIcons)">
+			<focusedlayout height="115" width="430" condition="!Skin.HasSetting(Media_Titles_WideIcons)">
 				<control type="image">
 					<posx>1</posx>
 					<posy>1</posy>
 					<width>423</width>
-					<height>125</height>
+					<height>110</height>
 					<texture border="5">folder-focus.png</texture>
 				</control>
 				<control type="image">
 					<posx>6</posx>
-					<posy>6</posy>
+					<posy>0</posy>
 					<width>413</width>
 					<height>90</height>
+					<aspectratio>keep</aspectratio>
 					<texture background="true">$VAR[BannerThumb]</texture>
 				</control>
 				<control type="image">
-					<posx>438</posx>
-					<posy>65</posy>
-					<width>35</width>
-					<height>35</height>
+					<posx>390</posx>
+					<posy>5</posy>
+					<width>25</width>
+					<height>25</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Overlay]</texture>
 				</control>
 				<control type="label">
 					<posx>10</posx>
-					<posy>100</posy>
+					<posy>85</posy>
 					<width>538</width>
 					<height>25</height>
 					<font>font11</font>
@@ -1318,19 +1320,20 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</focusedlayout>
-			<itemlayout height="102" width="475" condition="Skin.HasSetting(Media_Titles_WideIcons)">
+			<itemlayout height="100" width="430" condition="Skin.HasSetting(Media_Titles_WideIcons)">
 				<control type="image">
 					<posx>1</posx>
 					<posy>1</posy>
-					<width>473</width>
-					<height>100</height>
+					<width>423</width>
+					<height>90</height>
 					<texture border="5">button-nofocus.png</texture>
 				</control>
 				<control type="image">
 					<posx>6</posx>
-					<posy>6</posy>
-					<width>463</width>
+					<posy>0</posy>
+					<width>413</width>
 					<height>90</height>
+					<aspectratio>keep</aspectratio>
 					<texture background="true">$VAR[BannerThumb]</texture>
 				</control>
 				<control type="image">
@@ -1342,19 +1345,20 @@
 					<texture>$INFO[ListItem.Overlay]</texture>
 				</control>
 			</itemlayout>
-			<focusedlayout height="102" width="475" condition="Skin.HasSetting(Media_Titles_WideIcons)">
+			<focusedlayout height="100" width="430" condition="Skin.HasSetting(Media_Titles_WideIcons)">
 				<control type="image">
 					<posx>1</posx>
 					<posy>1</posy>
-					<width>473</width>
-					<height>100</height>
+					<width>423</width>
+					<height>90</height>
 					<texture border="5">folder-focus.png</texture>
 				</control>
 				<control type="image">
 					<posx>6</posx>
-					<posy>6</posy>
-					<width>463</width>
+					<posy>0</posy>
+					<width>413</width>
 					<height>90</height>
+					<aspectratio>keep</aspectratio>
 					<texture background="true">$VAR[BannerThumb]</texture>
 				</control>
 				<control type="image">
